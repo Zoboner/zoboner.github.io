@@ -20,7 +20,7 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 1. Absence des bagues chromées
-![Absence des bagues](images/DiffOldNew.jpg)  
+![Absence des bagues](articles/litige-chipnmodz/images/DiffOldNew.jpg)  
 ![Mesure PAC avec bagues](images/WithBGOld.jpg)  
 ![Mesure PAC sans bagues](images/WithBGNew.jpg)  
 *Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
