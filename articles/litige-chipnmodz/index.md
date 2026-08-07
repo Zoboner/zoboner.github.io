@@ -20,20 +20,24 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 1. Absence des bagues chromées
-![Absence des bagues](images/bagues_manquantes.jpg)  
+![Absence des bagues](images/DiffOldNew.jpg)  
+![Mesure PAC avec bagues](images/WithBGOld.jpg)  
+![Mesure PAC sans bagues](images/WithBGNew.jpg)  
 *Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
 
 ### 2. Soudure de la nappe amateur
-![Nappe brasée de travers](images/nappe_travers.jpg)  
+![Nappe brasée de travers](images/NappeNew.jpg)  
 *La nappe est brasée manuellement, avec un décalage d'environ 0.6 mm. Du flux non nettoyé est encore présent.*
 
 ### 3. Défauts critiques détectés au microscope
 - **Piste 17 (GND) :** non reliée (coupée), cette piste est négligeable
 - **Pistes 12 (Reset) et 13 (SCL Horloge I2C) :** pontées par un excès d'étain
 
-![Pont de soudure](images/pont_soudure.jpg)  
+![Pont de soudure](images/NappeNew.jpg)  
 *Court-circuit visible entre les pistes 12 et 13.*
 
+![PSvita Original soudure machine](images/NappeOld.jpg) 
+*Travail fait par les labo de Sony, propre*
 ---
 
 ## Diagnostic technique complet
