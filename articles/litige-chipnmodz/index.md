@@ -12,6 +12,7 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 
 **Commande passée le :** [date]  
 **Prix :** 64,90 € (59,90 + 5 € de port)
+![Annonce web](images/AnnonceWeb.JPG)  
 
 ---
 
@@ -20,20 +21,20 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 1. Absence des bagues chromées
-![Absence des bagues](articles/litige-chipnmodz/images/DiffOldNew.JPG)  
+![Absence des bagues](images/DiffOldNew.JPG)  
 ![Mesure PAC avec bagues](images/WithBGOld.JPG)  
-![Mesure PAC sans bagues](images/WithBGNew.jpg)  
+![Mesure PAC sans bagues](images/WithBGNew.JPG)  
 *Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
 
 ### 2. Soudure de la nappe amateur
-![Nappe brasée de travers](images/NappeNew.jpg)  
+![Nappe brasée de travers](images/NappeNew.JPG)  
 *La nappe est brasée manuellement, avec un décalage d'environ 0.6 mm. Du flux non nettoyé est encore présent.*
 
 ### 3. Défauts critiques détectés au microscope
 - **Piste 17 (GND) :** non reliée (coupée), cette piste est négligeable
 - **Pistes 12 (Reset) et 13 (SCL Horloge I2C) :** pontées par un excès d'étain
 
-![Pont de soudure](images/NappeNew.jpg)  
+![Pont de soudure](images/NappeNew.JPG)  
 *Court-circuit visible entre les pistes 12 et 13.*
 
 ![PSvita Original soudure machine](images/NappeOld.jpg) 
