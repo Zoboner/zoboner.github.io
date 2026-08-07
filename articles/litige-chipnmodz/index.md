@@ -37,7 +37,7 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 ![Pont de soudure](images/NappeNew.JPG)  
 *Court-circuit visible entre les pistes 12 et 13.*
 
-![PSvita Original soudure machine](images/NappeOld.jpg) 
+![PSvita Original soudure machine](images/NappeOld.JPG) 
 *Travail fait par les labo de Sony, propre*
 ---
 
