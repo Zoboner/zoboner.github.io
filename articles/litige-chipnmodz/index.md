@@ -87,7 +87,7 @@ Plutôt que de renvoyer l'écran (et perdre ma seule preuve), j'ai décidé de l
 Je me moque de leurs 60€, là n'est pas le problème ! C'est la ferveur qu'ils mettent a faire passer les clients pour des navets ! 
 Et le souci de dangerosité pour la console qui je le rappel, devait recevoir cet écran pour restauration et non pour déterrioration !
 J'ai tout simplement un problème avec les gens de mauvaises fois !
-Donc réparons cette beauté et voyons si la dalle est bien une Samsung, car en effet la nappe sortante y est très mal brasé, elle comporte bien le logo Samsung,
+Donc réparons cette beauté et voyons si la dalle est bien une Samsung, car en effet la nappe sortante pui est très mal brasé, comporte bien le logo Samsung,
 mais ne nous y fions pas pour l'instant ! 
 
 ### Matériel utilisé
