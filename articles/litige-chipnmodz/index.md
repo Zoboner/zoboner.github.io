@@ -61,6 +61,29 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ---
 
+### 4. Clarification du matériel 
+
+Ces photos montre une partie de mon setup, ma PSVita et leur écran, pour avoir une vision plus éclairé.
+
+Mon labo, ma PSV et l'écran de la mort qui tue 🤗 :
+
+![Setup du ZoOb](images/setup.JPG) 
+
+Mon System PSV vue de près et remonté 😎:
+
+![L'écran usé par le temps](images/NappeNew.JPG)  
+*Visualisez bien la rayure vers le bouton select, qui fait référence a l'usure temporel de l'engin 😋.*
+
+L'écran de ces professionnel de haute voltige 🙄:
+
+![Ecran neuf recto](images/setNew.JPG) 
+*Le recto, rutilant et avec la feuille de protection.* 
+
+![Ecran neuf verso](images/procheNew.JPG) 
+*Il pourrait paraitre propre vue d'ici... Mais ce n'est pas le cas de plus près 🧐!*
+
+
+
 ## Diagnostic technique complet
 
 J'ai utilisé mon **Analog Discovery Studio** pour effectuer des tests de continuité et de court-circuit.
