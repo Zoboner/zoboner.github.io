@@ -94,7 +94,10 @@ Voici les ref' Pinout pour la nappe :
 ### Extrait du datasheet correspondant aux PINs de sortie de la nappe :
 
 ![PSvita Original soudure machine + Datasheet](images/PINOUT.png) 
+
 *La piste n°1 (**GND**) n'est pas visible sur le circuit, car elle est dissimulée sous la coque plastique, mais elle est bien présente !*
+
+---
 
 ### Résultats des mesures
 
