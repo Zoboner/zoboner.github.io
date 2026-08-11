@@ -10,7 +10,8 @@ categories: [hardware, modding, litige]
 Passionné de rétro-ingénierie et de développement sur console portable, j'ai récemment acheté un écran AMOLED complet pour PSVita 1000 sur le site Chip'n Modz. Le produit était décrit comme **"neuf & original"**,
 avec une photo montrant les deux bagues chromées sous les joysticks.
 
-**Commande passée le :** [2026/26/07]  
+**Commande passée le :** [2026/26/07] 
+
 ![Annonce web](images/AnnonceWeb.JPG)
 
 **Prix :** 64,99 € (59,99 + 5 € de port)
@@ -19,6 +20,7 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 
 Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches,
 **la bague y est bien présente !**... La blague aussi ! 😁
+
 ![Annonce](images/nouvelleIMG.png)
 
 ---
@@ -28,18 +30,23 @@ Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux 
 Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 1. Absence des bagues chromées
+
 ![Absence des bagues](images/DiffOldNew.JPG)
 -Mesure au PAC de mon ancien écran :
+
 ![Mesure PAC avec bagues](images/WithBGOld.JPG) 
 -Mesure au PAC de l'écran neuf :
+
 ![Mesure PAC sans bagues](images/WithBGNew.JPG)  
 *Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
 
 ### 2. Soudure de la nappe amateur
+
 ![Nappe brasée de travers](images/NappeNew.JPG)  
 *La nappe est brasée manuellement, avec un décalage d'environ 0.6 mm. Du flux non nettoyé est encore présent.*
 
 ### 3. Défauts critiques détectés au microscope
+
 - **Piste 17 (GND) :** non reliée (coupée), cette piste est négligeable
 - **Pistes 12 (SPI_CS) et 13 (INT) :** pontées par un excès d'étain
 
