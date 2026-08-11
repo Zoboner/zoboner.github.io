@@ -10,9 +10,12 @@ categories: [hardware, modding, litige]
 Passionné de rétro-ingénierie et de développement sur console portable, j'ai récemment acheté un écran AMOLED complet pour PSVita 1000 sur le site Chip'n Modz. Le produit était décrit comme **"neuf & original"**,
 avec une photo montrant les deux bagues chromées sous les joysticks.
 
-**Commande passée le :** [date]  
-**Prix :** 64,90 € (59,90 + 5 € de port)
+**Commande passée le :** [2026/26/07]  
+**Prix :** 64,99 € (59,99 + 5 € de port)
 ![Annonce web](images/AnnonceWeb.JPG)  
+
+**Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches
+![Annonce web](images/nouvelleIMG.JPG)
 
 ---
 
