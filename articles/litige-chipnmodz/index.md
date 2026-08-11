@@ -71,7 +71,7 @@ Mon labo, ma PSV et l'écran de la mort qui tue 🤗 :
 
 Mon System PSV vue de près et remonté 😎:
 
-![L'écran usé par le temps](images/NappeNew.JPG)  
+![L'écran usé par le temps](images/setOld.JPG)  
 *Visualisez bien la rayure vers le bouton select, qui fait référence a l'usure temporel de l'engin 😋.*
 
 L'écran de ces professionnel de haute voltige 🙄:
