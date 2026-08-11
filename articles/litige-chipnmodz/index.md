@@ -17,6 +17,7 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 ---
 
 **Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches
+**la bague y est bien présente !
 ![Annonce](images/nouvelleIMG.png)
 
 ---
