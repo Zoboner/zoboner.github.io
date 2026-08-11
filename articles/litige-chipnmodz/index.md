@@ -89,7 +89,7 @@ L'écran de ces professionnel de haute voltige 🙄:
 
 ![Ecran neuf verso](images/procheNew.JPG) 
 
-*Il pourrait paraitre propre vue d'ici... Mais ce n'est pas le cas de plus près 🧐!*
+*Le verso qui pourrait paraitre propre vue d'ici... Mais les photos avec une prise de vue macro démontres le contraire 🧐!*
 
 ## Diagnostic technique complet
 
