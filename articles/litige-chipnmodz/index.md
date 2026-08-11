@@ -52,7 +52,8 @@ cet ajustement n'est pas le même, et ne permet pas de visualiser cette indice, 
 supérieur gauche, car il y a un détrompeur ( le petit trou dans la nappe interne ) et celui ci sert de point de fixation pour
 les automates qui mettent en approche ce circuit flexible pour permettre un ajustement nette du raccordement de ces 2 nappes,
 qui sont par la suite brasées par des machines en série par un processus reflow ou laser, ce qui donne un résultat impeccable
-dans sa finalité ! Hors ici tout est bien différent et mal ajusté, signe que ceci n'est pas du travail fait par automatisation !*
+dans sa finalité ! Hors ici tout est bien différent et mal ajusté, signe que ceci n'est pas du travail fait par automatisation !
+Ceci est bien visible sur les deux photos si dessous.*
 
 ### 3. Défauts critiques détectés au microscope
 
