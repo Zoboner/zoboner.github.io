@@ -67,7 +67,7 @@ Voici les ref' Pinout pour la nappe :
 |16 | SCL |	I2C Clock (ou SPI Clock) |
 |17 |GND |	Masse |
 
-le Datasheet de l'ecran : 
+### Datasheet de l'ecran : 
 
 ![Datasheet Samsung AMOled](images/AMS495QA04_datasheet_V5.PDF)  
 
