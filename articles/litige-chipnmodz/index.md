@@ -33,11 +33,11 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ![Absence des bagues](images/DiffOldNew.JPG)
 
--Mesure au PAC de mon ancien écran :
+-Mesure du diamètre (bagues en place) au PAC de mon ancien écran :
 
 ![Mesure PAC avec bagues](images/WithBGOld.JPG) 
 
--Mesure au PAC de l'écran neuf :
+-Mesure du diamètre (bagues manquantes) au PAC de l'écran neuf :
 
 ![Mesure PAC sans bagues](images/WithBGNew.JPG)  
 *Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
@@ -45,7 +45,7 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 ### 2. Soudure de la nappe amateur
 
 ![Nappe brasée de travers](images/NappeNew.JPG)  
-*La nappe est brasée manuellement, avec un décalage d'environ 0.6 mm. Du flux non nettoyé est encore présent.*
+*La nappe est brasée manuellement, avec un décalage d'environ 0.4 mm. Du flux non nettoyé est encore présent.*
 
 ### 3. Défauts critiques détectés au microscope
 
