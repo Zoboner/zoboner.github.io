@@ -14,8 +14,10 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 **Prix :** 64,99 € (59,99 + 5 € de port)
 ![Annonce web](images/AnnonceWeb.JPG)  
 
+---
+
 **Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches
-![Annonce web](images/nouvelleIMG.JPG)
+![Annonce](images/nouvelleIMG.JPG)
 
 ---
 
