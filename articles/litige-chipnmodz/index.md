@@ -11,12 +11,12 @@ Passionné de rétro-ingénierie et de développement sur console portable, j'ai
 avec une photo montrant les deux bagues chromées sous les joysticks.
 
 **Commande passée le :** [2026/26/07]  
-**Prix :** 64,99 € (59,99 + 5 € de port)
+**Prix :** 64,99 € (59,99 + 5 € de port)*
 ![Annonce web](images/AnnonceWeb.JPG)  
 
 ---
 
-**Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches
+**Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches,
 **la bague y est bien présente !**
 ![Annonce](images/nouvelleIMG.png)
 
