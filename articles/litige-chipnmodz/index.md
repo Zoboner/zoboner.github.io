@@ -28,8 +28,10 @@ Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux 
 Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 1. Absence des bagues chromées
-![Absence des bagues](images/DiffOldNew.JPG)  
-![Mesure PAC avec bagues](images/WithBGOld.JPG)  
+![Absence des bagues](images/DiffOldNew.JPG)
+-Mesure au PAC de mon ancien écran :
+![Mesure PAC avec bagues](images/WithBGOld.JPG) 
+-Mesure au PAC de l'écran neuf :
 ![Mesure PAC sans bagues](images/WithBGNew.JPG)  
 *Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
 
@@ -88,10 +90,21 @@ Voici les ref' Pinout pour la nappe :
 
 ### Risque pour la console
 
-Brancher cet écran tel quel sur une carte mère PSVita, c'est :
-- Court-circuiter les lignes de communication I2C (risque de griller le contrôleur d'affichage)
-- Laisser entrer de la poussière par les trous des joysticks (absence de bagues)
+- **Le pont entre SPI_CS (broche 12) et INT (broche 13) – LE DÉFAUT MAJEUR**
 
+**SPI_CS** est une ligne active basse : elle est normalement à l'état haut (**VDD**) et passe à l'état bas (**GND**) pour sélectionner le composant et démarrer une communication **SPI**.
+
+**INT** est une ligne d'interruption : elle est utilisée par l'écran pour signaler un événement (tactile, rafraîchissement, etc.) au processeur. Elle est généralement active basse également.
+
+Court-circuiter **SPI_CS** et **INT**, c'est :
+
+Forcer la ligne **INT** en permanence à l'état bas lorsque le bus **SPI** est sollicité (car **CS** passe à 0), ce qui génère des *interruptions fantômes* en continu.
+
+Risquer de bloquer le bus **SPI** car le signal **CS** ne peut plus monter correctement à l'état haut.
+
+Dans le pire des cas, endommager le contrôleur **SPI** du **SoC** de la PS Vita en le soumettant à des *conflits de niveaux logiques*.
+
+En clair : brancher cet écran, c'est mettre le système de communication **SPI** de ta console en danger. Le contrôleur **SPI** du **SoC** pourrait griller ou voir ses E/S détruites par des courts-circuits répétés.
 **J'ai refusé de le brancher** et j'ai contacté le service client.
 
 ---
