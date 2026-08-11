@@ -20,8 +20,8 @@ dans des enseignes différentes, ils ne proviennent nullement de chez Chip'n Mod
 
 ---
 
-Une nouvelle photo qui n'apparaissait pas avant mon litige avec ces pro' a deux mains gauches,
-**la bague y est bien présente !**... La blague aussi ! 😁
+Une nouvelle photo du site de ces pro' a deux mains gauches,
+**la bague y est bien présente !**... La blague aussi ! 😁 (cette dernière photo n'a pas été ajouté par la suite, mais est du a une conversion du site entre laptop/desktop et smartphone)
 
 ![Annonce](images/nouvelleIMG.png)
 
