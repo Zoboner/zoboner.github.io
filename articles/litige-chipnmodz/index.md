@@ -32,9 +32,11 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 ### 1. Absence des bagues chromées
 
 ![Absence des bagues](images/DiffOldNew.JPG)
+
 -Mesure au PAC de mon ancien écran :
 
 ![Mesure PAC avec bagues](images/WithBGOld.JPG) 
+
 -Mesure au PAC de l'écran neuf :
 
 ![Mesure PAC sans bagues](images/WithBGNew.JPG)  
