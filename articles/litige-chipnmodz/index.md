@@ -49,10 +49,10 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 *Remarquez aussi l'ajustement de la nappe interne, celle de l'écran et non celle en sortie qui se connecte a la carte mère, 
 sur le coin supérieur droit, vous y voyez légèrement le symbole "1" correspondant a la piste du même chiffre, hors sur l'original 
 cet ajustement n'est pas le même, et ne permet pas de visualiser cette indice, et ce détail est bien plus flagrant sur le coin 
-supérieur gauche, car il y a un détrompeur ( le petit trou dans la nappe interne ) et celui ci ne peut être fixé qu'a un endroit 
-bien précis sous cette coque de plastique pour permettre un ajustement nette du raccordement de ces 2 nappes, qui sont par la suite 
-brasées par des machines en série par un processus reflow ou laser, ce qui donne un résultat impeccable dans sa finalité ! Hors ici 
-tout est bien différent et mal ajusté, signe que ceci n'est pas du travail fait par automatisation !*
+supérieur gauche, car il y a un détrompeur ( le petit trou dans la nappe interne ) et celui ci sert de point de fixation pour
+les automates qui mettent en approche ce circuit flexible pour permettre un ajustement nette du raccordement de ces 2 nappes,
+qui sont par la suite brasées par des machines en série par un processus reflow ou laser, ce qui donne un résultat impeccable
+dans sa finalité ! Hors ici tout est bien différent et mal ajusté, signe que ceci n'est pas du travail fait par automatisation !*
 
 ### 3. Défauts critiques détectés au microscope
 
