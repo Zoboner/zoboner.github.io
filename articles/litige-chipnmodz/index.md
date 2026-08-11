@@ -69,7 +69,7 @@ Voici les ref' Pinout pour la nappe :
 
 ### Datasheet de l'ecran : 
 
-![Datasheet Samsung AMOled](images/AMS495QA04_datasheet_V5.PDF)  
+[Télécharger le datasheet complet](images/AMS495QA04_datasheet_V5.PDF) 
 
 ### Résultats des mesures
 
