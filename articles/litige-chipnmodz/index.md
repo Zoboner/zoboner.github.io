@@ -8,7 +8,8 @@ categories: [hardware, modding, litige]
 ## Contexte
 
 Passionné de rétro-ingénierie et de développement sur console portable, j'ai récemment acheté un écran AMOLED complet pour PSVita 1000 sur le site Chip'n Modz. Le produit était décrit comme **"neuf & original"**,
-avec une photo montrant les deux bagues chromées sous les joysticks.
+avec une photo montrant les deux bagues chromées sous les joysticks. Je précise que j'ai acheté cette PSVita quelques jours avant cette infamie sur LeBonCoin, j'ai fait cette acquisition pour faire du développement 
+sur la bête, j'ai donc décidé de remettre la batterie a neuf et de changer le port USB Sony standard par un mod USB-C, Data + et - compris ( je posterais le taf sur un prochain poste et y mettrais un lien pour les curieux 😉), puis cet écran ! Je comptais changer les joysticks mais je n'ai malheureusement rien trouvé de convaincant pour le moment .
 
 **Commande passée le :** [2026/26/07] 
 
