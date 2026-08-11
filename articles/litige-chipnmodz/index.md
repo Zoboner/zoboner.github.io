@@ -77,12 +77,12 @@ Mon System PSV vue de près et remonté 😎:
 L'écran de ces professionnel de haute voltige 🙄:
 
 ![Ecran neuf recto](images/setNew.JPG) 
+
 *Le recto, rutilant et avec la feuille de protection.* 
 
 ![Ecran neuf verso](images/procheNew.JPG) 
+
 *Il pourrait paraitre propre vue d'ici... Mais ce n'est pas le cas de plus près 🧐!*
-
-
 
 ## Diagnostic technique complet
 
