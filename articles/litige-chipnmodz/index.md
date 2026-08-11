@@ -87,9 +87,13 @@ Voici les ref' Pinout pour la nappe :
 |16 | SCL |	I2C Clock (ou SPI Clock) |
 |17 |GND |	Masse |
 
-### Datasheet de l'ecran : 
+### Datasheet de l'écran : 
 
 [Télécharger le datasheet complet](images/AMS495QA04_datasheet_V5.pdf) 
+
+### Extrait du datasheet correspondant aux PINs de sortie de la nappe :
+
+![PSvita Original soudure machine + Datasheet](images/PINOUT.png) 
 
 ### Résultats des mesures
 
