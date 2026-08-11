@@ -13,7 +13,7 @@ avec une photo montrant les deux bagues chromées sous les joysticks.
 **Commande passée le :** [2026/26/07]  
 ![Annonce web](images/AnnonceWeb.JPG)
 
-**Prix :** 64,99 € (59,99 + 5 € de port)**
+**Prix :** 64,99 € (59,99 + 5 € de port)
 
 ---
 
