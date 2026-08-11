@@ -49,15 +49,15 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 3. Défauts critiques détectés au microscope
 
-- **Piste 17 (GND) :** non reliée (coupée)
-- **Pistes 12 (SPI_CS) et 13 (INT) :** pontées par un excès d'étain
+- **Piste 17 (GND) :** non reliée (piste arrachée).
+- **Pistes 12 (SPI_CS) et 13 (INT) :** pontées par un excès d'étain.
 
 ![Pont de soudure](images/NappeNew.JPG)  
 *Court-circuit visible entre les pistes 12 et 13.*
 
 ![PSvita Original soudure machine](images/NappeOld.JPG) 
 
-*Travail fait par les labo de Sony, et c'est du propre.*
+*Travail fait par les labo de **Sony**, et c'est du **propre**.*
 
 ---
 
