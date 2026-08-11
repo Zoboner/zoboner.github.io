@@ -163,30 +163,35 @@ En clair : brancher cet écran, c'est mettre le système de communication **SPI*
 
 ## Échanges avec le service client
 
-Voici mes messages (anonymisés pour respecter le secret des correspondances) :
+Je tiens a signaler que je ne suis pas très sympathique concernant l'acquisition sous contrat de vente, d'objets ou de biens matériels, via le services d'achats en ligne.
+Je part du principe que je suis le client et que l'achat doit correspondre en tout points a la description faite par le vendeur, et a ces photos, contractuel ou non !
+En revanche je reste toujours ouvert a la discussion et même a l'arrangement, quand bien entendue, le SAV reste correcte ! C'est à dire, que si ceux ci avaient dénié admettre 
+leurs torts, j'aurais tout bêtement réparé ceci et l'affaire aurait été clôturée de suite dans l'état , car je me moque de ces 60€ et des bananes ! 
 
-> **Mon premier message :**  
-> *"Bonjour, j'ai reçu l'écran mais il manque les bagues chromées et la nappe présente des défauts de soudure critiques. Je demande un remboursement intégral."*
+Voici le résumé des messages (anonymisés pour respecter le secret des correspondances) :
+
+> **Mon premier message (résumée) :**  
+> *"Bonjour, j'ai reçu l'écran mais il manque les bagues chromées et la nappe présente des défauts de soudure critiques. Réglez ce litige et vite."*
 
 > **Leur réponse (résumée) :**  
-> *"Nos produits sont neufs et originaux, directement issus des usines Sony. Vous devez récupérer les bagues sur votre ancien écran. Nous ne remboursons pas les produits endommagés par l'utilisateur."*
+> *"Nos produits sont neufs et originaux, directement issus des usines Sony. Vous devez récupérer les bagues sur votre ancien écran ainsi que les pad thermique. Nous ne remboursons pas les produits endommagés par l'utilisateur."*
 
-> **Mon deuxième message :**  
+> **Mon deuxième message (résumée):**  
 > *"J'ai des photos macro des défauts. Une piste est coupée, deux sont pontées. C'est un danger pour la console. Je ne demande pas un geste commercial, mais un remboursement pour non-conformité."*
 
 > **Leur dernière réponse (résumée) :**  
 > *"Si vous n'êtes pas capable de retirer de simples bagues, ne vous lancez pas dans la réparation de console."*
 
+Je n'ai pas répondu a leur dernier mail, car ils sont de bien mauvaise foi et me font des éloges sur mes travaux 😂😂😂 ! Considérant que le litige n'est plus une question de blabla, il est temps de montrer a ces amateurs comment on opère sur un circuit 🤗 et ça c'est mon dada... Pas de bol 👹!
 ---
 
 ## Réparation et preuve de l'amateurisme
 
 Plutôt que de renvoyer l'écran (et perdre ma seule preuve), j'ai décidé de le réparer moi-même tout en documentant chaque étape.
 Je me moque de leurs 60€, là n'est pas le problème ! C'est la ferveur qu'ils mettent a faire passer les clients pour des navets ! 
-Et le souci de dangerosité pour la console qui je le rappel, devait recevoir cet écran pour restauration et non pour déterrioration !
+Et le souci de dangerosité pour la console qui je le rappel, devait recevoir cet écran pour restauration et non pour détérioration !
 J'ai tout simplement un problème avec les gens de mauvaises fois !
-Donc réparons cette beauté et voyons si la dalle est bien une Samsung, car en effet la nappe sortante pui est très mal brasé, comporte bien le logo Samsung,
-mais ne nous y fions pas pour l'instant ! 
+Réparons donc cette beauté ☺. 
 
 ### Matériel utilisé
 - Metcal MX-5000 (station de soudure professionnelle)
