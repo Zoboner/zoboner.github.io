@@ -32,7 +32,7 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 
 ### 3. Défauts critiques détectés au microscope
 - **Piste 17 (GND) :** non reliée (coupée), cette piste est négligeable
-- **Pistes 12 (Reset) et 13 (SCL Horloge I2C) :** pontées par un excès d'étain
+- **Pistes 12 (SPI_CS) et 13 (INT) :** pontées par un excès d'étain
 
 ![Pont de soudure](images/NappeNew.JPG)  
 *Court-circuit visible entre les pistes 12 et 13.*
@@ -47,24 +47,23 @@ J'ai utilisé mon **Analog Discovery Studio** pour effectuer des tests de contin
 
 Voici les ref' Pinout pour la nappe : 
 
-Broche	Signal	Fonction
-1	GND /	Masse
-2	AVDD /	Alimentation analogique
-3	AVDD / Alimentation analogique
-4	VDD /	Alimentation numérique
-5	VDD /	Alimentation numérique
-6	GND /	Masse
-7	GND /	Masse
-8	SPI_CLK /	Horloge SPI
-9	GND /	Masse
-10	SPI_MISO / Data SPI (Master In Slave Out)
-11	SPI_MOSI / Data SPI (Master Out Slave In)
-12	SPI_CS / Chip Select (sélection du composant)
-13	INT /	Interruption (signal d'événement)
-14	RESET /	Réinitialisation
-15	SDA /	I2C Data (ou Data SPI)
-16	SCL /	I2C Clock (ou SPI Clock)
-17	GND /	Masse
+-1	GND /	Masse
+-2	AVDD /	Alimentation analogique
+-3	AVDD / Alimentation analogique
+-4	VDD /	Alimentation numérique
+-5	VDD /	Alimentation numérique
+-6	GND /	Masse
+-7	GND /	Masse
+-8	SPI_CLK /	Horloge SPI
+-9	GND /	Masse
+-10	SPI_MISO / Data SPI (Master In Slave Out)
+-11	SPI_MOSI / Data SPI (Master Out Slave In)
+-12	SPI_CS / Chip Select (sélection du composant)
+-13	INT /	Interruption (signal d'événement)
+-14	RESET /	Réinitialisation
+-15	SDA /	I2C Data (ou Data SPI)
+-16	SCL /	I2C Clock (ou SPI Clock)
+-17	GND /	Masse
 
 le Datasheet de l'ecran : 
 
