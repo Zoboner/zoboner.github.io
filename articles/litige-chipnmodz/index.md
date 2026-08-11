@@ -48,7 +48,7 @@ J'ai utilisé mon **Analog Discovery Studio** pour effectuer des tests de contin
 Voici les ref' Pinout pour la nappe : 
 
 | Broches | Signal | fonction |
-|.........|........|..........|
+|---------|--------|----------|
 | 1 |	GND |	Masse |
 | 2 | AVDD |	Alimentation analogique |
 | 3 |	AVDD | Alimentation analogique |
