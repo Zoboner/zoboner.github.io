@@ -47,23 +47,25 @@ J'ai utilisé mon **Analog Discovery Studio** pour effectuer des tests de contin
 
 Voici les ref' Pinout pour la nappe : 
 
--1	GND /	Masse
--2	AVDD /	Alimentation analogique
--3	AVDD / Alimentation analogique
--4	VDD /	Alimentation numérique
--5	VDD /	Alimentation numérique
--6	GND /	Masse
--7	GND /	Masse
--8	SPI_CLK /	Horloge SPI
--9	GND /	Masse
--10	SPI_MISO / Data SPI (Master In Slave Out)
--11	SPI_MOSI / Data SPI (Master Out Slave In)
--12	SPI_CS / Chip Select (sélection du composant)
--13	INT /	Interruption (signal d'événement)
--14	RESET /	Réinitialisation
--15	SDA /	I2C Data (ou Data SPI)
--16	SCL /	I2C Clock (ou SPI Clock)
--17	GND /	Masse
+| Broches | Signal | fonction |
+|.........|........|..........|
+| 1 |	GND |	Masse |
+| 2 | AVDD |	Alimentation analogique |
+| 3 |	AVDD | Alimentation analogique |
+| 4 |	VDD |	Alimentation numérique |
+| 5 |	VDD |	Alimentation numérique |
+| 6 |	GND |	Masse |
+|7 | GND |	Masse |
+|8 | SPI_CLK |	Horloge SPI |
+|9 | GND |	Masse |
+|10 | SPI_MISO | Data SPI (Master In Slave Out) |
+|11 | SPI_MOSI | Data SPI (Master Out Slave In) |
+|12 | SPI_CS | Chip Select (sélection du composant) |
+|13 | INT |	Interruption (signal d'événement) |
+|14 | RESET |	Réinitialisation |
+|15 | SDA |	I2C Data (ou Data SPI) |
+|16 | SCL |	I2C Clock (ou SPI Clock) |
+|17 |GND |	Masse |
 
 le Datasheet de l'ecran : 
 
