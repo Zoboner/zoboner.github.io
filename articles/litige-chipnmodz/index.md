@@ -163,7 +163,7 @@ En clair : brancher cet écran, c'est mettre le système de communication **SPI*
 
 ## Échanges avec le service client
 
-Je tiens a signaler que je ne suis pas très sympathique concernant l'acquisition sous contrat de vente, d'objets ou de biens matériels, via le services d'achats en ligne.
+Je tiens a signaler que je ne suis pas très sympathique concernant l'acquisition sous contrat de vente, d'objets ou de biens matériels endommagés ou comportant des vices cachés, via les services d'achats en ligne.
 Je part du principe que je suis le client et que l'achat doit correspondre en tout points a la description faite par le vendeur, et a ces photos, contractuel ou non !
 En revanche je reste toujours ouvert a la discussion et même a l'arrangement, quand bien entendue, le SAV reste correcte ! C'est à dire, que si ceux ci avaient dénié admettre 
 leurs torts, j'aurais tout bêtement réparé ceci et l'affaire aurait été clôturée de suite dans l'état , car je me moque de ces 60€ et des bananes ! 
@@ -177,7 +177,7 @@ Voici le résumé des messages (anonymisés pour respecter le secret des corresp
 > *"Nos produits sont neufs et originaux, directement issus des usines Sony. Vous devez récupérer les bagues sur votre ancien écran ainsi que les pad thermique. Nous ne remboursons pas les produits endommagés par l'utilisateur."*
 
 > **Mon deuxième message (résumée):**  
-> *"J'ai des photos macro des défauts. Une piste est coupée, deux sont pontées. C'est un danger pour la console. Je ne demande pas un geste commercial, mais un remboursement pour non-conformité."*
+> *"J'ai des photos macro des défauts. Une piste est coupée, deux sont pontées. C'est un danger pour la console. Vous dites avoir testé cet écran, mais je sais qu'il est défaillant ! Tout comme le fait que celui-ci sorte des labos de chez Sony, alors qu'il y manque les bagues et que le job est très mal réalisé."*
 
 > **Leur dernière réponse (résumée) :**  
 > *"Si vous n'êtes pas capable de retirer de simples bagues, ne vous lancez pas dans la réparation de console."*
