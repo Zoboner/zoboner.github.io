@@ -156,7 +156,7 @@ Risquer de bloquer le bus **SPI** car le signal **CS** ne peut plus monter corre
 
 Dans le pire des cas, endommager le contrôleur **SPI** du **SoC** de la PS Vita en le soumettant à des *conflits de niveaux logiques*.
 
-En clair : brancher cet écran, c'est mettre le système de communication **SPI** de ta console en danger. Le contrôleur **SPI** du **SoC** pourrait griller ou voir ses E/S détruites par des courts-circuits répétés.
+En clair : brancher cet écran, c'est mettre le système de communication **SPI** de la console en danger. Le contrôleur **SPI** du **SoC** pourrait griller ou voir ses E/S détruites par des courts-circuits répétés.
 
 De plus les bagues manquantes laissent une porte d'entré a tout éléments volatile (poussières, particules, etc...), ce qui à la longue pourrait provoqué des 
 court circuits si mal entretenu.
@@ -169,8 +169,7 @@ court circuits si mal entretenu.
 
 Je tiens a signaler que je ne suis pas très sympathique concernant l'acquisition sous contrat de vente, d'objets ou de biens matériels endommagés ou comportant des vices cachés, via les services d'achats en ligne.
 Je part du principe que je suis le client et que l'achat doit correspondre en tout points a la description faite par le vendeur, et a ces photos, contractuel ou non !
-En revanche je reste toujours ouvert a la discussion et même a l'arrangement, quand bien entendue, le SAV reste correcte ! C'est à dire, que si ceux ci avaient dénié admettre 
-leurs torts, j'aurais tout bêtement réparé ceci et l'affaire aurait été clôturée de suite dans l'état , car je me moque de ces 60€ et des bananes ! 
+En revanche je reste toujours ouvert a la discussion et même a l'arrangement, quand bien entendue, le SAV reste correcte ! C'est à dire, que si ceux ci avaient dénié admettre leurs torts, j'aurais tout bêtement réparé ceci et l'affaire aurait été clôturée de suite dans l'état , car je me moque de ces 60€ et des bananes ! 
 
 Voici le résumé des messages (anonymisés pour respecter le secret des correspondances) :
 
@@ -222,6 +221,8 @@ Posons nos yeux sur le circuit quelques instant, pour détourner les liaisons de
 Il nous donnera une vision clair qui me permettra de prendre une décision finale concernant l'essaie sur la carte mère 😉.
 
 Il nous faut éclaircir quelque points avant de démarrer.
+
+---
 
 ##Le début de la fin
 
