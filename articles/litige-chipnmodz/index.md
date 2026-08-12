@@ -226,7 +226,7 @@ Il nous faut éclaircir quelque points avant de démarrer.
 
 ##Le début de la fin
 
-Cherchons, pour commencer, quelles Pins nous serraient utile pour ces détails finaux.
+Cherchons, pour commencer, quelles PINs nous serraient utile pour ces détails finaux.
 
 Voici les 7 connexions indispensables pour une simple initialisation :
 
@@ -239,7 +239,7 @@ Voici les 7 connexions indispensables pour une simple initialisation :
 |SPI_MOSI|	11|	Digital I/O 1 (DIO1)|
 |SPI_CS	|12|	Digital I/O 2 (DIO2)|
 |RESET|	14|	Digital I/O 3 (DIO3)|
-*(Le SPI_MISO pin 10, l'INT pin 13, le SDA/SCL ne sont pas nécessaires pour une simple initialisation. On les ignore pour l'instant.)*
+*(Le SPI_MISO pin n°10, l'INT pin n°13, le SDA/SCL ne sont pas nécessaires pour une simple initialisation. On les ignore pour l'instant.)*
 
 **1. Configuration de l'alimentation**
 
@@ -251,7 +251,11 @@ C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tens
 
 - GND (pins 1, 6, 7, 9, 17) : Toutes les masses doivent être reliées ensemble.
 
---
+** Ces 2 photos montre une méthode de connexion par brasage avec du câble monobrin de 0.3mm ( spécial DATA ), et un câble monobrin de 0.6mm pour GND (masse), suivit d'un assemblage par câbles de test pour planche a pain (breadboard).**
+
+![Mise en place des câbles de raccordement](images/rac.jpg) 
+
+---
 
 **Action :
 
