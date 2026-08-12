@@ -256,14 +256,15 @@ C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tens
 ![Mise en place des câbles de raccordement](images/rac.jpg) 
 
 ![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
+
 ---
 
-**Action :
+**Action :**
 
-Nous allons lancer le logiciel WaveForms (c'est lui qui vas nous aider a y voir plus clair), puis utiliser l'instrument "Supplies" (l'alimentation variable).
-Il nous faut Configurer une sortie (V+) en tension constante (CV) à 1.8V pour le VDD, puis une autre (V-) à 3.3V pour l'AVDD.
+Nous allons lancer le logiciel **WaveForms** (*c'est lui qui vas nous aider a y voir plus clair*), puis utiliser l'instrument **"Supplies"** (l'alimentation variable).
+Il nous faut Configurer une **sortie (V+)** en tension constante (*CV*) à **1.8V** pour le **VDD**, puis une autre (*V-*) à **3.3V** pour l'**AVDD**.
 Commençons par Connecter les masses de l'écran (pin 7 était la plus simple de toutes) à la masse (GND) de l'ADS puis connectons les sorties d'alimentation aux pins correspondantes.
-Soyons prudent et ne les activons pas de suite (laissons les sorties désactivées pour l'instant).
+Soyons **prudent** et ne les activons pas de suite (laissons les sorties désactivées pour l'instant).
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
