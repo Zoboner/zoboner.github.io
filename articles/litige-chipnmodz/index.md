@@ -210,8 +210,10 @@ Les pistes n°12 et 13 désolidarisées et remisent au propre – test de contin
 
 ### Test final
 Une fois réparé, et bien que les tests de continuités soient correcte, l'écran n'a pas été branché sur ma PSVita .
+
 Rien ne m'indique que l'écran est pleinement fonctionnel, pour ce faire il faudrait braser des PINs sur les pistes pour faire des testes plus poussés avec l'ADS !
 Qu'à cela ne tienne ! Il suffit de finir ce qui a été commencé, non ?!
+
 Posons nos yeux sur le circuit quelques instant, pour détourner les liaisons de celui-ci sur l'ADS et lui donner de quoi faire une analyse précise.
 Il nous donnera une vision clair qui me permettra de prendre une décision finale concernant l'essaie sur la carte mère 😉.
 
