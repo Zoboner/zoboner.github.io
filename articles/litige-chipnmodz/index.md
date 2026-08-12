@@ -157,6 +157,10 @@ Risquer de bloquer le bus **SPI** car le signal **CS** ne peut plus monter corre
 Dans le pire des cas, endommager le contrôleur **SPI** du **SoC** de la PS Vita en le soumettant à des *conflits de niveaux logiques*.
 
 En clair : brancher cet écran, c'est mettre le système de communication **SPI** de ta console en danger. Le contrôleur **SPI** du **SoC** pourrait griller ou voir ses E/S détruites par des courts-circuits répétés.
+
+De plus les bagues manquantes laissent une porte d'entré a tout éléments volatile (poussières, particules, etc...), ce qui à la longue pourrait provoqué des 
+court circuits si mal entretenu.
+
 **J'ai refusé de le brancher** et j'ai contacté le service client.
 
 ---
