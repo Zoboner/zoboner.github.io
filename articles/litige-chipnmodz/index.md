@@ -240,7 +240,7 @@ C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tens
 
 - VDD (pins 4 et 5) : C'est la logique numérique. D'après le wiki de développement, la logique de la PS Vita fonctionne en 1.8V. C'est une valeur très probable pour VDD.
 
-- AVDD (pins 2 et 3) : C'est l'alimentation analogique pour l'OLED. Je n'ai pas de valeur officielle, mais pour des écrans de ce type, c'est souvent autour de +5V à +6V. Je te conseille de commencer très bas, par exemple +3.3V, et de n'augmenter que si l'écran ne s'allume pas. Ne dépasse pas 6V.
+- AVDD (pins 2 et 3) : C'est l'alimentation analogique pour l'OLED. Je n'ai pas de valeur officielle, mais pour des écrans de ce type, c'est souvent autour de +5V à +6V. Je conseille donc de commencer très bas, par exemple +3.3V, et de n'augmenter que si l'écran ne s'allume pas. Ne dépassez pas 6V!
 
 - GND (pins 1, 6, 7, 9, 17) : Toutes les masses doivent être reliées ensemble.
 
