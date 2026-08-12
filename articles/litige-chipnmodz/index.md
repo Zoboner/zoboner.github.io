@@ -204,11 +204,34 @@ Réparons donc cette beauté ☺.
 3. **Réparation** de la piste 17 avec un fil de liaison.
 4. **Contrôle** final avec l'Analog Discovery Studio.
 
-![Réparation de la piste](images/reparation_piste.jpg)  
-*La piste 17 réparée avec un fil de liaison – test de continuité OK.*
+![Réparation de la piste](images/reflow.JPG)  
+*La piste 17 réparée avec un fil de liaison – test de continuité OK.
+Les pistes n°12 et 13 désolidarisées et remisent au propre – test de continuité OK.*
 
 ### Test final
-Une fois réparé, l'écran a été branché sur ma PSVita et fonctionne parfaitement.
+Une fois réparé, l'écran n'a pas été branché sur ma PSVita .
+Rien ne m'indique que l'écran est pleinement fonctionnel, pour ce faire il faudrait braser des PINs sur les pistes pour faire des testes plus poussés avec l'ADS !
+Qu'à cela ne tienne ! Il suffit de finir ce qui a été commencé, non ?!
+Posons nos yeux sur le circuit quelques instant, pour détourner les liaisons de celui-ci sur l'ADS et lui donner de quoi faire une analyse précise.
+Il nous donnera une vision clair qui me permettra de prendre une décision finale concernant l'essaie sur la carte mère 😉.
+
+Il nous faut éclaircir quelque points avant de démarrer.
+
+##Le début de la fin
+
+Cherchons pour commencer, quelles Pins nous serraient utile pour ce détail.
+
+voici les 7 connexions indispensables pour une simple initialisation :
+
+| Fonction | Pin Nappe | Branchement sur ADS |
+|----------|-----------|---------------------|
+|GND	|1 (ou 6/7/9/17)|	GND (alimentation) ET GND (référence oscillo)|
+|VDD (logique)|	4 & 5 (souder ensemble)|	V+ (1.8V)|
+|AVDD (analogique)|	2 & 3 (souder ensemble)|	V- (3.3V dans un premier temps)|
+|SPI_CLK|	8|	Digital I/O 0 (DIO0)|
+|SPI_MOSI|	11|	Digital I/O 1 (DIO1)|
+|SPI_CS	|12|	Digital I/O 2 (DIO2)|
+|RESET|	14|	Digital I/O 3 (DIO3)|
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
