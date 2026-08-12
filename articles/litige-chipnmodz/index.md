@@ -204,7 +204,7 @@ Réparons donc cette beauté ☺.
 3. **Réparation** de la piste 17 avec un fil de liaison.
 4. **Contrôle** final avec l'Analog Discovery Studio.
 
-![Réparation de la piste](images/reflow.JPG)  
+![Réparation de la piste](images/reflow.jpg)  
 *La piste 17 réparée avec un fil de liaison – test de continuité OK.
 Les pistes n°12 et 13 désolidarisées et remisent au propre – test de continuité OK.*
 
