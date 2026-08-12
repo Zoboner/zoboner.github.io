@@ -255,6 +255,7 @@ C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tens
 
 ![Mise en place des câbles de raccordement](images/rac.jpg) 
 
+![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
 ---
 
 **Action :
