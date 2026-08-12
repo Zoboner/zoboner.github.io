@@ -206,10 +206,10 @@ Réparons donc cette beauté ☺.
 
 ![Réparation de la piste](images/reflow.jpg)  
 *La piste 17 réparée avec un fil de liaison – test de continuité OK.
-Les pistes n°12 et 13 désolidarisées et remisent au propre – test de continuité OK.*
+Les pistes n°12 et 13 désolidarisées et remisent au propre – test de continuité OK. 👌*
 
 ### Test final
-Une fois réparé, l'écran n'a pas été branché sur ma PSVita .
+Une fois réparé, et bien que les tests de continuités soient correcte, l'écran n'a pas été branché sur ma PSVita .
 Rien ne m'indique que l'écran est pleinement fonctionnel, pour ce faire il faudrait braser des PINs sur les pistes pour faire des testes plus poussés avec l'ADS !
 Qu'à cela ne tienne ! Il suffit de finir ce qui a été commencé, non ?!
 Posons nos yeux sur le circuit quelques instant, pour détourner les liaisons de celui-ci sur l'ADS et lui donner de quoi faire une analyse précise.
@@ -219,9 +219,9 @@ Il nous faut éclaircir quelque points avant de démarrer.
 
 ##Le début de la fin
 
-Cherchons pour commencer, quelles Pins nous serraient utile pour ce détail.
+Cherchons, pour commencer, quelles Pins nous serraient utile pour ces détails finaux.
 
-voici les 7 connexions indispensables pour une simple initialisation :
+Voici les 7 connexions indispensables pour une simple initialisation :
 
 | Fonction | Pin Nappe | Branchement sur ADS |
 |----------|-----------|---------------------|
@@ -232,6 +232,26 @@ voici les 7 connexions indispensables pour une simple initialisation :
 |SPI_MOSI|	11|	Digital I/O 1 (DIO1)|
 |SPI_CS	|12|	Digital I/O 2 (DIO2)|
 |RESET|	14|	Digital I/O 3 (DIO3)|
+*(Le SPI_MISO pin 10, l'INT pin 13, le SDA/SCL ne sont pas nécessaires pour une simple initialisation. On les ignore pour l'instant.)*
+
+**1. Configuration de l'alimentation**
+
+C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tensions, sans quoi il pourrait être endommager définitivement.
+
+- VDD (pins 4 et 5) : C'est la logique numérique. D'après le wiki de développement, la logique de la PS Vita fonctionne en 1.8V. C'est une valeur très probable pour VDD.
+
+- AVDD (pins 2 et 3) : C'est l'alimentation analogique pour l'OLED. Je n'ai pas de valeur officielle, mais pour des écrans de ce type, c'est souvent autour de +5V à +6V. Je te conseille de commencer très bas, par exemple +3.3V, et de n'augmenter que si l'écran ne s'allume pas. Ne dépasse pas 6V.
+
+- GND (pins 1, 6, 7, 9, 17) : Toutes les masses doivent être reliées ensemble.
+
+--
+
+**Action :
+
+Nous allons lancer le logiciel WaveForms (c'est lui qui vas nous aider a y voir plus clair), puis utiliser l'instrument "Supplies" (l'alimentation variable).
+Il nous faut Configurer une sortie (V+) en tension constante (CV) à 1.8V pour le VDD, puis une autre (V-) à 3.3V pour l'AVDD.
+Commençons par Connecter les masses de l'écran (pin 7 était la plus simple de toutes) à la masse (GND) de l'ADS puis connectons les sorties d'alimentation aux pins correspondantes.
+Soyons prudent et ne les activons pas de suite (laissons les sorties désactivées pour l'instant).
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
