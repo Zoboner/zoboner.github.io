@@ -233,8 +233,8 @@ Voici les 7 connexions indispensables pour une simple initialisation :
 | Fonction | Pin Nappe | Branchement sur ADS |
 |----------|-----------|---------------------|
 |GND	|1 (ou 6/7/9/17)|	GND (alimentation) ET GND (référence oscillo)|
-|VDD (logique)|	4 & 5 (souder ensemble)|	V+ (1.8V)|
-|AVDD (analogique)|	2 & 3 (souder ensemble)|	V- (3.3V dans un premier temps)|
+|VDD (logique)|	4 & 5 (souder ensemble)|1.8V|
+|AVDD (analogique)|	2 & 3 (souder ensemble)| 3.3V|
 |SPI_CLK|	8|	Digital I/O 0 (DIO0)|
 |SPI_MOSI|	11|	Digital I/O 1 (DIO1)|
 |SPI_CS	|12|	Digital I/O 2 (DIO2)|
@@ -244,12 +244,25 @@ Voici les 7 connexions indispensables pour une simple initialisation :
 **1. Configuration de l'alimentation**
 
 C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tensions, sans quoi il pourrait être endommager définitivement.
+Prenons comme références cette bible qu'est le Datasheet de l'écran. 
 
-- VDD (pins 4 et 5) : C'est la logique numérique. D'après le wiki de développement, la logique de la PS Vita fonctionne en 1.8V. C'est une valeur très probable pour VDD.
+- VDD (pins 4 et 5) : C'est la logique numérique. D'après le wiki de développement, la logique de la PS Vita fonctionne en 1.8V. C'est une valeur très probable pour VDD. Le Datasheet le confirme en section 6 "caractéristiques Electric", il donne les plage d'alimentation suivante :
 
-- AVDD (pins 2 et 3) : C'est l'alimentation analogique pour l'OLED. Je n'ai pas de valeur officielle, mais pour des écrans de ce type, c'est souvent autour de +5V à +6V. Je conseille donc de commencer très bas, par exemple +3.3V, et de n'augmenter que si l'écran ne s'allume pas. Ne dépassez pas 6V!
+|MIN|TYP|MAX|UNIT|
+|---|---|---|----|
+|1.65|1.8|3.6|V|
+
+- AVDD (pins 2 et 3) : C'est l'alimentation analogique pour l'OLED. Le Datasheet fournit aussi ces plages a la même section que pour VDD, regardez a VCI :
+
+|MIN|TYP|MAX|UNIT|
+|---|---|---|----|
+|2.8|3.0|3.6|V|
 
 - GND (pins 1, 6, 7, 9, 17) : Toutes les masses doivent être reliées ensemble.
+
+- ELVDD / ELVSS : tensions de l’OLED (4,6 V et -3,7 V typiques). Elles sont générées en interne par un convertisseur DC/DC intégré au module (rendement 82 % mentionné). Nous n’avons donc pas besoin de les fournir en externe.
+
+Cela signifie que l’écran devrait démarrer avec uniquement VDD et VCI, à condition de respecter la séquence d’allumage et les niveaux logiques.
 
 ** Ces 2 photos montre une méthode de connexion par brasage avec du câble monobrin de 0.3mm ( spécial DATA ), et un câble monobrin de 0.6mm pour GND (masse), suivit d'un assemblage par câbles de test pour planche a pain (breadboard).**
 
@@ -264,9 +277,11 @@ C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tens
 Nous allons lancer le logiciel **WaveForms** (*c'est lui qui vas nous aider a y voir plus clair*), puis utiliser l'instrument **"Supplies"** (l'alimentation variable).
 
 Il nous faut Configurer une **sortie (V+)** en tension constante (*CV*) à **1.8V** pour le **VDD**, puis une autre (*V-*) à **3.3V** pour l'**AVDD**.
-Commençons par Connecter les masses de l'écran (pin 7 était la plus simple de toutes) à la masse (GND) de l'ADS puis connectons les sorties d'alimentation aux pins correspondantes.
+Commençons par Connecter le plan de masses de l'écran (pin 7 (GND) était la plus simple de toutes) à la masse (GND) de l'ADS puis connectons les sorties d'alimentation aux pins correspondantes.
 
 Soyons **prudent** et ne les activons pas de suite (laissons les sorties désactivées pour l'instant).
+
+
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
