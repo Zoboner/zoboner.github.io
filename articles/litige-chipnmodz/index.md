@@ -440,9 +440,11 @@ J'ai aussi commandé ceux-ci et quelques autres éléments pour de futures proje
 
 # la solution du pauvre : Le pont diviseur résistif :
 
-Pour ce faire il faut utiliser un calcul simple : (V/(R1+R2)) = D
-                                                  (1,8/(1,5+1,8)) ~= 0,545 
-                                                   3,3 V * 0,545 = 1,8 V
+Pour ce faire il faut utiliser un calcul simple :
+
+(V/(R1+R2)) = D
+(1,8/(1,5+1,8)) ~= 0,545 
+ 3,3 V * 0,545 = 1,8 V
 
 Il nous faut donc 2 résistances par signal  : R1 = 1.5 kΩ et R2 = 1.8 kΩ
 
