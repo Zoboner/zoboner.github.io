@@ -294,7 +294,7 @@ Rien de complexe pour cette étape, il suffit d'utiliser l'outil "Supplies" du l
 
 *L'autre cadre vert permet 2 actions, désactiver le V+ (cadre blanc gauche) et le réglage de la plage de tension*
 
-*le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min"
+*le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min"*
 
 *Le cadre bleu sert a activé par voie maitresse ces sortie*
 
