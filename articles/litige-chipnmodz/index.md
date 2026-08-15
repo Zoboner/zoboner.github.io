@@ -16,7 +16,7 @@ dans des enseignes différentes, ils ne proviennent nullement de chez Chip'n Mod
 
 ![Annonce web](images/AnnonceWeb.JPG)
 
-**Prix :** 64,99 € (59,99 + 5 € de port)
+**(Prix :** 64,99 € (59,99 + 5 € de port))
 
 ---
 
@@ -24,7 +24,7 @@ Une nouvelle photo du site de ces pro' a deux mains gauches,
 **la bague y est bien présente !**... La blague aussi ! 😁 (cette dernière photo n'a pas été ajouté par la suite, mais est du a une conversion du site entre laptop/desktop et smartphone)
 
 ![Annonce](images/nouvelleIMG.png)
-
+*(Encore une preuve que les bagues sont bien présente sur les photos du site !)*
 ---
 
 ## Ce que j'ai reçu
@@ -42,7 +42,7 @@ Dès l'ouverture du colis, j'ai constaté plusieurs anomalies :
 -Mesure du diamètre (bagues manquantes) au PAC de l'écran neuf :
 
 ![Mesure PAC sans bagues](images/WithBGNew.JPG)  
-*Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.*
+*(Photo de l'écran reçu – les bagues sont absentes, contrairement à la photo du site.)*
 
 ### 2. Soudure de la nappe amateur
 
@@ -63,11 +63,11 @@ Ceci est bien visible sur les deux photos si dessous.*
 - **Pistes 12 (SPI_CS) et 13 (INT) :** pontées par un excès d'étain.
 
 ![Pont de soudure](images/NappeNew.JPG)  
-*Court-circuit visible entre les pistes 12 et 13.*
+*(Court-circuit visible entre les pistes 12 et 13.)*
 
 ![PSvita Original soudure machine](images/NappeOld.JPG) 
 
-*Travail fait par les labo de **Sony**, et c'est du **propre**.*
+*(Travail fait par les labo de **Sony**, et c'est du **propre**.)*
 
 ---
 
@@ -81,18 +81,19 @@ Mon labo, ma PSV et l'écran de la mort qui tue 🤗 :
 
 Mon System PSV vue de près et remonté 😎:
 
-![L'écran usé par le temps](images/setOld.JPG)  
-*Visualisez bien la rayure vers le bouton select, qui fait référence a l'usure temporel de l'engin 😋.*
+![L'écran usé par le temps](images/setOld.JPG) 
+
+*(Visualisez bien la rayure vers le bouton select, qui fait référence a l'usure temporel de l'engin 😋.)*
 
 L'écran de ces professionnel de haute voltige 🙄:
 
 ![Ecran neuf recto](images/setNew.JPG) 
 
-*Le recto, rutilant et avec la feuille de protection.* 
+*(Le recto, rutilant et avec la feuille de protection.)* 
 
 ![Ecran neuf verso](images/procheNew.JPG) 
 
-*Le verso qui pourrait paraitre propre vue d'ici... Mais les photos avec une prise de vue macro démontres le contraire 🧐!*
+*(Le verso qui pourrait paraitre propre vue d'ici... Mais les photos avec une prise de vue macro démontres le contraire 🧐!)*
 
 ## Diagnostic technique complet
 
@@ -124,11 +125,11 @@ Voici les ref' Pinout pour la nappe :
 
 [Télécharger le datasheet complet](images/AMS495QA04_datasheet_V5.pdf) 
 
-### Extrait du datasheet correspondant aux PINs de sortie de la nappe :
+### Extrait du Datasheet ( Plan en fin de doc ) correspondant aux PINs de sortie de la nappe :
 
 ![PSvita Original soudure machine + Datasheet](images/PINOUT.png) 
 
-*La piste n°1 (**GND**) n'est pas visible sur le circuit, car elle est dissimulée sous la coque plastique, mais elle est bien présente !*
+*(La piste n°1 (**GND**) n'est pas visible sur le circuit, car elle est dissimulée sous la coque plastique, mais elle est bien présente !)*
 
 ---
 
@@ -207,9 +208,10 @@ Réparons donc cette beauté ☺.
 3. **Réparation** de la piste 17 avec un fil de liaison.
 4. **Contrôle** final avec l'Analog Discovery Studio.
 
-![Réparation de la piste](images/reflow.jpg)  
-*La piste 17 réparée avec un fil de liaison – test de continuité OK.
-Les pistes n°12 et 13 désolidarisées et remisent au propre – test de continuité OK. 👌*
+![Réparation de la piste](images/reflow.jpg) 
+
+*(La piste 17 réparée avec un fil de liaison – test de continuité OK.
+Les pistes n°12 et 13 désolidarisées et remisent au propre – test de continuité OK. 👌)*
 
 ### Test final
 Une fois réparé, et bien que les tests de continuités soient correcte, l'écran n'a pas été branché sur ma PSVita .
@@ -301,7 +303,7 @@ Cela signifie que **l’écran devrait démarrer avec uniquement VDD et VCI**, �
 
 ![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
 
-*⚠ Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran ⚠*
+*(⚠ Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran ⚠)*
 
 ---
 
@@ -327,25 +329,25 @@ Soyons **prudent** et ne les activons pas de suite (laissons les sorties désact
 
 ![WaveForms pour le réglage de V+ a 1.8V](images/Supplies.png)
 
-*Le cadre vert du haut indique que l'outil "Supplies" est actif*
+*(Le cadre vert du haut indique que l'outil "Supplies" est actif)*
 
-*L'autre cadre vert permet 2 actions, désactiver/activer le V+ (cadre blanc gauche) et le réglage de la plage de tension*
+*(L'autre cadre vert permet 2 actions, désactiver/activer le V+ (cadre blanc gauche) et le réglage de la plage de tension)*
 
-*le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min", utile pour rester dans la plage préconisée*
+*(le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min", utile pour rester dans la plage préconisée)*
 
-*Le cadre bleu sert a activer/désactiver par voie maitresse ces sortie*
+*(Le cadre bleu sert a activer/désactiver par voie maitresse ces sortie)*
 
 Une foi activé et non connecté a l'écran, il suffira de connecter les pinces sur la bornes respectives de la partie Oscilloscope de l'ADS ou bien d'y connecter un câble de teste sur la bornes +, sous-jacente a cette même partie.
 
 ![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.jpg)
 
-*Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.*
+*(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.)*
 
 Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForms pour y relever la valeur en acquisition, qui doit correspondre a la tension ordonnée précédemment via l'outil "Supplies" pour V+. Soit 1V8. 
 
 ![Vérif' Voltmeter 1V8](images/verif_tension_1v8.jpg)
 
-*Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V, la légère chute de cette tension est tout a fait normal, le circuit de l'ADS donne une légère résistance, d'où cette valeur amoindri.*
+*(Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V, la légère chute de cette tension est tout a fait normal, le circuit de l'ADS donne une légère résistance, d'où cette valeur amoindri.)*
 
 - 3V3 :
 
@@ -357,7 +359,7 @@ Ensuite il suffit de répéter l'opération de vérification de la tension via l
 
 ![Vérif' Voltmeter 3V3](images/verif_tension_3v3.jpg)
 
-*La tension en visuel.*
+*(La tension en visuel.)*
 
 - Une foi les tensions vérifiées et validées, on connecte l'écran ? :
 
@@ -390,11 +392,11 @@ Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VC
 
 ![Alimentation Power On](images/PowerOn.jpg)
 
-*liaison pour l'alimentation.*
+*(liaison pour l'alimentation.)*
 
-*On alimente via "Supplies" V+ puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).*
+*(On alimente via "Supplies" V+ puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).)*
 
-*Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "Supplies" V+.*
+*(Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "Supplies" V+.)*
 
 # #
 
