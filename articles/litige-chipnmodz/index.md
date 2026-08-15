@@ -442,9 +442,9 @@ J'ai aussi commandé ceux-ci et quelques autres éléments pour de futures proje
 
 Pour ce faire il faut utiliser un calcul simple :
 
-(V/(R1+R2)) = D
-(1,8/(1,5+1,8)) ~= 0,545 
- 3,3 V * 0,545 = 1,8 V
+- (V/(R1+R2)) = D
+- (1,8/(1,5+1,8)) ~= 0,545 
+- 3,3 V * 0,545 ~= 1,8 V
 
 Il nous faut donc 2 résistances par signal  : R1 = 1.5 kΩ et R2 = 1.8 kΩ
 
@@ -456,14 +456,19 @@ Ne reliez pas directement l'écran a ces sorties, préféré plutôt créer un p
 
 Pour que tout soit bien claire : 
 
-DIO -> R1 -> Signal -> R2 -> GND 
+- DIO -> R1 -> Signal -> R2 -> GND 
+- DIO 0 -> 1.5k -> CLK -> 1.8k -> GND
 
-![Câblage DIOs + pont diviseur](images/DIO_Div.jpg) 
+![Câblage DIOs + pont diviseur](images/DIO_Div.jpg)
+
 *(Car je sais que tout n'est parfois pas si claire pour tous, une image est bien plus explicite 😎)*
 
 ##
+
 [A venir : Level Shifter, solution ultra propre.]
+
 [A venir : Fabrication Home made de Level Shifter via MOSFET et Résistance.]
+
 ##
 
 
