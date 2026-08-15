@@ -253,7 +253,11 @@ C'est la boite a outil pour l'outil lui même 😁, la parti neuronal du cerveau
 
 # #
 
+**Maintenant que les présentations sont faites, passons a la partie technique.**
+
 Cherchons, pour commencer, quelles PINs nous serraient utile pour ces détails finaux.
+
+Le précieux **Datasheet de l'écran** est **indispensable** pour les actions qui vont suivre
 
 Voici les 7 connexions indispensables pour une simple initialisation :
 
@@ -273,29 +277,31 @@ Voici les 7 connexions indispensables pour une simple initialisation :
 C'est l'étape la plus critique. Il faut alimenter l'écran avec les bonnes tensions, sans quoi il pourrait être endommager définitivement.
 Prenons comme références cette bible qu'est le Datasheet de l'écran. 
 
-- VDD (pins 4 et 5) : C'est la logique numérique. D'après le wiki de développement, la logique de la PS Vita fonctionne en 1.8V. C'est une valeur très probable pour VDD. Le Datasheet le confirme en section 6 "caractéristiques Electric", il donne les plage d'alimentation suivante :
+- VDD (pins 4 et 5) : C'est la **logique numérique**. D'après le wiki de développement, la logique de la PS Vita fonctionne en 1.8V. C'est une valeur très probable pour VDD. Le Datasheet le confirme en **section 6 "caractéristiques Electric"**, il donne les plage d'alimentation suivante :
 
 |MIN|TYP|MAX|UNIT|
 |---|---|---|----|
 |1.65|1.8|3.6|V|
 
-- AVDD (pins 2 et 3) : C'est l'alimentation analogique pour l'OLED. Le Datasheet fournit aussi ces plages a la même section que pour VDD, regardez a VCI :
+- AVDD (pins 2 et 3) : C'est l'**alimentation analogique** pour l'OLED. Le **Datasheet** fournit aussi ces plages a la **même section que pour VDD**, regardez a **VCI** :
 
 |MIN|TYP|MAX|UNIT|
 |---|---|---|----|
 |2.8|3.0|3.6|V|
 
-- GND (pins 1, 6, 7, 9, 17) : Toutes les masses doivent être reliées ensemble.
+- **GND** (pins 1, 6, 7, 9, 17) : **Toutes les masses doivent être reliées ensemble**.
 
-- ELVDD / ELVSS : tensions de l’OLED (4,6 V et -3,7 V typiques). Elles sont générées en interne par un convertisseur DC/DC intégré au module (rendement 82 % mentionné). Nous n’avons donc pas besoin de les fournir en externe.
+- **ELVDD / ELVSS** : tensions de l’OLED (4,6 V et -3,7 V typiques). Elles sont générées en interne par un convertisseur DC/DC intégré au module (rendement 82 % mentionné). **Nous n’avons donc pas besoin de les fournir en externe**.
 
-Cela signifie que l’écran devrait démarrer avec uniquement VDD et VCI, à condition de respecter la séquence d’allumage et les niveaux logiques.
+Cela signifie que **l’écran devrait démarrer avec uniquement VDD et VCI**, à condition de respecter la **séquence d’allumage** et les **niveaux logiques**.
 
-** Ces 2 photos montre une méthode de connexion par brasage avec du câble monobrin de 0.3mm ( spécial DATA ), et un câble monobrin de 0.6mm pour GND (masse), suivit d'un assemblage par brasage des câbles de test pour planche a pain (breadboard) car ceux-ci sont flexibles et offre une souplesse pour la connexion a la breadboard de l'ADS.**
+**Ces 2 photos montre une méthode de connexion par brasage avec du câble monobrin de 0.3mm ( spécial DATA ), et un câble monobrin de 0.6mm pour GND (masse), suivit d'un assemblage par brasage des câbles de test pour planche a pain (breadboard) car ceux-ci sont flexibles et offre une souplesse pour la connexion a la breadboard de l'ADS.**
 
 ![Mise en place des câbles de raccordement](images/rac.jpg) 
 
 ![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
+
+*⚠ Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran ⚠*
 
 ---
 
@@ -304,27 +310,48 @@ Cela signifie que l’écran devrait démarrer avec uniquement VDD et VCI, à co
 Nous allons lancer le logiciel **WaveForms** (*c'est lui qui vas nous aider a y voir plus clair*), puis utiliser l'instrument **"Supplies"** (l'alimentation variable).
 
 Il nous faut Configurer une **sortie (V+)** en tension constante (*CV*) à **1.8V** pour le **VDD**, puis une autre (*3.3V*) à **3.3V** pour l'**AVDD**.
-Commençons par Connecter le plan de masses de l'écran (pin 7 (GND) était la plus simple de toutes) à la masse (GND) de l'ADS puis connectons les sorties d'alimentation aux pins correspondantes.
+Par la suite nous connecterons le plan de masses de l'écran (pin 7 (GND) était la plus simple de toutes) à la masse (GND) de l'ADS puis les sorties d'alimentation aux pins correspondantes, mais configurons en premier lieu les tensions de l'ADS.
 
 Soyons **prudent** et ne les activons pas de suite (laissons les sorties désactivées pour l'instant), il nous faut vérifier quelques petites chose primordiale avant d'alimenté l'écran : 
 
 - Vérifié les tensions de sortie aux bornes de l'ADS.
-- Trouver la séquence d'amorçage en consultant le Datasheet de l'écran.
+- Trouver la séquence d'amorçage en consultant le Datasheet de l'écran ( a ne pas négliger, il en vas de la survie de l'écran ).
 
 **Vérification des tensions de sortie :**
 
 - V+ :
-Rien de complexe pour cette étape, il suffit d'utiliser l'outil "Supplies" du logiciel WaveForms pour régler la tension du V+ de l'ADS a 1.8V, puis de faire la vérification avec l'outil "Voltmeter" ou bien avec l'aide un multimètre, mais dans mon cas l'utilisation de l'outil présent sur WaveForms est idéal.
+
+  Rien de complexe pour cette étape, il suffit d'utiliser l'outil "Supplies" du logiciel WaveForms pour régler la tension du V+ de l'ADS a 1.8V, puis de faire la vérification avec l'outil "Voltmeter" ou bien avec l'aide un multimètre, mais dans mon cas l'utilisation de l'outil présent sur WaveForms est idéal.
 
 ![WaveForms pour le réglage de V+ a 1.8V](images/Supplies.png)
 *Le cadre vert du haut indique que l'outil "Supplies" est actif*
 
-*L'autre cadre vert permet 2 actions, désactiver le V+ (cadre blanc gauche) et le réglage de la plage de tension*
+*L'autre cadre vert permet 2 actions, désactiver/activer le V+ (cadre blanc gauche) et le réglage de la plage de tension*
 
-*le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min"*
+*le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min", utile pour rester dans la plage préconisée*
 
-*Le cadre bleu sert a activé par voie maitresse ces sortie*
+*Le cadre bleu sert a activer/désactiver par voie maitresse ces sortie*
 
+Une foi activé et non connecté a l'écran, il suffira de connecter les pinces sur la bornes respectives de la partie Oscilloscope de l'ADS ou bien d'y connecter un câble de teste sur la bornes +, sous-jacente a cette même partie.
+
+![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.jpg)
+*Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.*
+
+Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForms pour y relever la valeur en acquisition, qui doit correspondre a la tension ordonnée précédemment via l'outil "Supplies" pour V+. Soit 1V8. 
+
+![Vérif' Voltmeter 1V8](images/verif_tension_1v8.jpg)
+*Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V, la légère chute de cette tension est tout a fait normal, le circuit de l'ADS donne une légère résistance, d'où cette valeur amoindri.*
+
+- 3V3 :
+
+  Passons maintenant a la partie 3.3V de l'alimentation. l'ADS peu fournir directement cette tension stabilisée sans passé par le logiciel WaveForms, il suffit de connecter un câble sur la borne prévue a cet effet et de l'activer par le biais de l'interrupteur assigné a cette tension, rien de plus !
+
+![Configuration de la tension 3v3 de l'ADS](images/conf_3V3.jpg)
+
+Ensuite il suffit de répéter l'opération de vérification de la tension via l'outil "Voltmeter" sur le logiciel.
+
+![Vérif' Voltmeter 3V3](images/verif_tension_3v3.jpg)
+*La tension en visuel.*
 
 
 
@@ -346,7 +373,7 @@ J'ai évité ce désastre grâce à mon expérience et mes outils. Un novice aur
 ---
 
 ## Conclusion et avertissement
-
+V
 **Chip'n Modz vend des produits :**
 - ❌ Non conformes à la description
 - ❌ Dangereux pour le matériel
@@ -365,4 +392,4 @@ J'ai évité ce désastre grâce à mon expérience et mes outils. Un novice aur
 
 ---
 
-*Documenté et rédigé par [Ton Pseudo] – Passionné de rétro-ingénierie depuis 20 ans.*
+*Documenté et rédigé par [zoboner] – Passionné de rétro-ingénierie depuis 12 ans.*
