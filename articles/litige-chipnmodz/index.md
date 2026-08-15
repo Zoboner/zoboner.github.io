@@ -177,7 +177,7 @@ Voici le résumé des messages (anonymisés pour respecter le secret des corresp
 > *"Bonjour, j'ai reçu l'écran mais il manque les bagues chromées et la nappe présente des défauts de soudure critiques. Réglez ce litige et vite."*
 
 > **Leur réponse (résumée) :**  
-> *"Nos produits sont neufs et originaux, directement issus des usines Sony. Vous devez récupérer les bagues sur votre ancien écran ainsi que les pad thermique. Nous ne remboursons pas les produits endommagés par l'utilisateur."*
+> *"Nos produits sont neufs et originaux, directement issus des usines Sony. Nous testons chaque produits avant expédition. Vous devez récupérer les bagues sur votre ancien écran ainsi que les pad thermique. Nous ne remboursons pas les produits endommagés par l'utilisateur."*
 
 > **Mon deuxième message (résumée):**  
 > *"J'ai des photos macro des défauts. Une piste est coupée, deux sont pontées. C'est un danger pour la console. Vous dites avoir testé cet écran, mais je sais qu'il est défaillant ! Tout comme le fait que celui-ci sorte des labos de chez Sony, alors qu'il y manque les bagues et que le job est très mal réalisé."*
