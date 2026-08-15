@@ -264,7 +264,7 @@ Prenons comme références cette bible qu'est le Datasheet de l'écran.
 
 Cela signifie que l’écran devrait démarrer avec uniquement VDD et VCI, à condition de respecter la séquence d’allumage et les niveaux logiques.
 
-** Ces 2 photos montre une méthode de connexion par brasage avec du câble monobrin de 0.3mm ( spécial DATA ), et un câble monobrin de 0.6mm pour GND (masse), suivit d'un assemblage par câbles de test pour planche a pain (breadboard).**
+** Ces 2 photos montre une méthode de connexion par brasage avec du câble monobrin de 0.3mm ( spécial DATA ), et un câble monobrin de 0.6mm pour GND (masse), suivit d'un assemblage par brasage des câbles de test pour planche a pain (breadboard) car ceux-ci sont flexibles et offre une souplesse pour la connexion a la breadboard de l'ADS.**
 
 ![Mise en place des câbles de raccordement](images/rac.jpg) 
 
@@ -276,10 +276,25 @@ Cela signifie que l’écran devrait démarrer avec uniquement VDD et VCI, à co
 
 Nous allons lancer le logiciel **WaveForms** (*c'est lui qui vas nous aider a y voir plus clair*), puis utiliser l'instrument **"Supplies"** (l'alimentation variable).
 
-Il nous faut Configurer une **sortie (V+)** en tension constante (*CV*) à **1.8V** pour le **VDD**, puis une autre (*V-*) à **3.3V** pour l'**AVDD**.
+Il nous faut Configurer une **sortie (V+)** en tension constante (*CV*) à **1.8V** pour le **VDD**, puis une autre (*3.3V*) à **3.3V** pour l'**AVDD**.
 Commençons par Connecter le plan de masses de l'écran (pin 7 (GND) était la plus simple de toutes) à la masse (GND) de l'ADS puis connectons les sorties d'alimentation aux pins correspondantes.
 
-Soyons **prudent** et ne les activons pas de suite (laissons les sorties désactivées pour l'instant).
+Soyons **prudent** et ne les activons pas de suite (laissons les sorties désactivées pour l'instant), il nous faut vérifier quelques petites chose primordiale avant d'alimenté l'écran : 
+
+- Vérifié les tensions de sortie aux bornes de l'ADS.
+- Trouver la séquence d'amorçage en consultant le Datasheet de l'écran.
+
+**Vérification des tensions de sortie :**
+
+- V+ :
+Rien de complexe pour cette étape, il suffit d'utiliser l'outil "Supplies" du logiciel WaveForms pour régler la tension du V+ de l'ADS a 1.8V, puis de faire la vérification avec l'outil "Voltmeter" ou bien avec l'aide un multimètre, mais dans mon cas l'utilisation de l'outil présent sur WaveForms est idéal.
+
+![WaveForms pour le réglage de V+ a 1.8V](images/Supplies.png)
+*Le cadre vert du haut indique que l'outil "Supplies" est actif*
+*L'autre cadre vert permet 2 actions, désactiver le V+ (cadre blanc gauche) et le réglage de la plage de tension*
+*le petit cadre rouge donne accès a un réglage supplémentaire, il permet une gestion plus fine de cette valeur, respectivement Max et Min"
+*Le cadre bleu sert a activé par voie maitresse ces sortie*
+
 
 
 
