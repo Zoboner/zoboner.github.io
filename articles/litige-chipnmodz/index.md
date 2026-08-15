@@ -324,6 +324,8 @@ Soyons **prudent** et ne les activons pas de suite (laissons les sorties désact
 
 **Vérification des tensions de sortie :**
 
+- GND (commun) : A relier en priorité. C'est la base, il suffit de relier la Masse général de l'ADS sur la ligne directrice de Masse du breadboard, ensuite toutes les Masse (GND) seront fixé a ce plan.
+
 - V+ :
 
   Rien de complexe pour cette étape, il suffit d'utiliser l'outil "Supplies" du logiciel WaveForms pour régler la tension du V+ de l'ADS a 1.8V, puis de faire la vérification avec l'outil "Voltmeter" ou bien avec l'aide un multimètre, mais dans mon cas l'utilisation de l'outil présent sur WaveForms est idéal.
@@ -424,7 +426,44 @@ Ici vous obtenez des infos sur le trafic de ces données ( I/O ), soit entrantes
 Les DIOs qui nous intéresse pour la séquence d'Init soit , CLK, MOSI, CS et RESET, sont a un niveau logic de 1.8V ( input ), pour MISO c'est une autre affaire car sont cas est inversé, nous verrons cela bien plus tard !
 
 Le premier problème est que l'ADS ne donne pas la possibilité de calibré le niveau de voltage pour ces DIOs, il sont donc tous a 3.3V et non négociable 😁!
-C'est un problème majeur car ce flux tourne a 1.8V, nous pourrions faire dans l'élevage de porc et faire cela comme des cochons, c'est à dire, laisser tel quel et envoyer la séquence avec une tension plus élevé, mais il est dangereux et impropre de le faire de la sorte. Nous ne sommes pas de ce genre là, n'allons pas imiter les professionnels de chez **"Chip'n Modz"** 😂😂😂 
+C'est un problème majeur car ce flux tourne a 1.8V pour l'écran, nous pourrions faire dans l'élevage de porc et faire cela comme des cochons, c'est à dire, laisser tel quel et envoyer la séquence avec une tension plus élevé, mais il est dangereux et impropre de le faire de la sorte. Nous ne sommes pas de ce genre là, n'allons pas imiter les professionnels de chez **"Chip'n Modz"** 😂😂😂.
+
+   -Solutions n°1 : utiliser un adaptateur de niveau (level shifter) 3,3 V vers 1,8 V. C’est un petit module très courant (par exemple basé sur le TXS0102 ou le PCA9306) ou le fabriquer soit même par le biais de transistors MOSFET et de résistances ( la base ), ceci offre une bonne stabilité et est plus que performant.
+
+   -Solution n°2 : Créer un pont diviseur résistif pour chaque signal avec 2 résistances par signal ( c'est le plus simple ), ceci est moins performant que la solution n°1 mais est tout a fait acceptable dans notre cas.
+
+Comme tout bon électroniciens, j'ai une montagne de composants près a êtres déployés pour mes projets, il vas de soit que j'ai des dizaines de grosse boites pour ranger les centaines de petites boites qui regroupe ces milliers de composant et bien entendus certains sont bien répertoriés dans un carnet pour pouvoir y mettre la main dessus rapidos, MAIS ( toujours ce fameux MAIS !) il y a aussi les composants acheté a la volé ( il n'y en a jamais assez 🤯 ), bien rangé dans de jolies boites mais non répertorier par manque de temps... Je ne retrouve pas mes level shifters, j'ai donc opté, pour avancer plus vite, pour la seconde solutions.
+Je fabriquerais un adaptateur de niveau plus tard pour obtenir une solution plus propre et montré comment s'y prendre, je pense que cela pourrait intéresser quelques uns d'entre vous, pour ce dépanner !
+J'ai aussi commandé ceux-ci et quelques autres éléments pour de futures projets assimilable a celui-ci et pour celui-ci ( rappelez vous de MISO qui demande a fonctionner en inversion ! ) ! Mais en attendant, nous allons faire avec la solution du pauvre, en utilisant quelques résistances 😉, c'est pas dure, c'est peu coûteux et ça dépanne max !
+
+##
+
+# la solution du pauvre : Le pont diviseur résistif :
+
+Pour ce faire il faut utiliser un calcul simple : (V/(R1+R2)) = D
+                                                  (1,8/(1,5+1,8)) ~= 0,545 
+                                                   3,3 V * 0,545 = 1,8 V
+
+Il nous faut donc 2 résistances par signal  : R1 = 1.5 kΩ et R2 = 1.8 kΩ
+
+Si comme moi vous ne trouvez pas ces valeurs dans votre immense stock de résistances ( tu les achètes par lot en Chine et ils ne les répertories pas 😤, vive le multimètre en mode Ohmmètre et les heures de folie a s'en pété les yeux ! ), il est juste normal soit de reprendre le calcul plus haut et de faire coïncider cela avec d'autres valeurs, mais là encore il faut tombé dessus ! Où bien tout simplement vous cherchez des valeurs pour monter celles-ci en série ( par exemple 1K + 680Ω + 120Ω = 1.8kΩ 🎉 )
+
+Maintenant que tout est claire, il nous faut câbler tout nos DIOs ( 4 pour l'instant, nous compliquerons la sauce par la suite avec du propre, c'est promis ! ), via la fiche original et complète enfichable pour les 2 bancs DIOs situé sur l'ADS, puis de relier les 4 qui nous intéresse sur la Breadboard du Canevas, ⚠ ne pas oublier le ground commun (GND, plan de masse), qui doit déjà avoir été mis en place pour la mise en tension comme énoncé plus haut, puis on insert une première résistance ( 1.5 kΩ ) en sortie du DIO souhaité, puis on relie par l'entré écran correspondant et enfin on ajoute la dernière résistance en sortie de cette ligne au plan de masse . Simple, mais suffisant 😊.
+
+Ne reliez pas directement l'écran a ces sorties, préféré plutôt créer un pont sur la breadboard pour simuler et surtout pouvoir vérifier si les tensions sont correctes ( toujours vérifier au préalable, cela ne mange pas de pain et permet de sécuriser ), si tout est ok, alors on relie l'écran a ces sorties, sans oublier les masse communes de l'écran bien évidemment !
+
+Pour que tout soit bien claire : 
+
+DIO -> R1 -> Signal -> R2 -> GND 
+
+![Câblage DIOs + pont diviseur](images/DIO_Div.jpg) 
+*(Car je sais que tout n'est parfois pas si claire pour tous, une image est bien plus explicite 😎)*
+
+##
+[A venir : Level Shifter, solution ultra propre.]
+[A venir : Fabrication Home made de Level Shifter via MOSFET et Résistance.]
+##
+
 
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
