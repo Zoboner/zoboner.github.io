@@ -324,6 +324,7 @@ Soyons **prudent** et ne les activons pas de suite (laissons les sorties désact
   Rien de complexe pour cette étape, il suffit d'utiliser l'outil "Supplies" du logiciel WaveForms pour régler la tension du V+ de l'ADS a 1.8V, puis de faire la vérification avec l'outil "Voltmeter" ou bien avec l'aide un multimètre, mais dans mon cas l'utilisation de l'outil présent sur WaveForms est idéal.
 
 ![WaveForms pour le réglage de V+ a 1.8V](images/Supplies.png)
+
 *Le cadre vert du haut indique que l'outil "Supplies" est actif*
 
 *L'autre cadre vert permet 2 actions, désactiver/activer le V+ (cadre blanc gauche) et le réglage de la plage de tension*
@@ -335,11 +336,13 @@ Soyons **prudent** et ne les activons pas de suite (laissons les sorties désact
 Une foi activé et non connecté a l'écran, il suffira de connecter les pinces sur la bornes respectives de la partie Oscilloscope de l'ADS ou bien d'y connecter un câble de teste sur la bornes +, sous-jacente a cette même partie.
 
 ![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.jpg)
+
 *Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.*
 
 Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForms pour y relever la valeur en acquisition, qui doit correspondre a la tension ordonnée précédemment via l'outil "Supplies" pour V+. Soit 1V8. 
 
 ![Vérif' Voltmeter 1V8](images/verif_tension_1v8.jpg)
+
 *Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V, la légère chute de cette tension est tout a fait normal, le circuit de l'ADS donne une légère résistance, d'où cette valeur amoindri.*
 
 - 3V3 :
@@ -348,12 +351,46 @@ Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForm
 
 ![Configuration de la tension 3v3 de l'ADS](images/conf_3V3.jpg)
 
-Ensuite il suffit de répéter l'opération de vérification de la tension via l'outil "Voltmeter" sur le logiciel.
+Ensuite il suffit de répéter l'opération de vérification de la tension via l'outil "Voltmeter" sur le logiciel en déplaçant simplement le câble de test sur la sortie en ligne adéquat.
 
 ![Vérif' Voltmeter 3V3](images/verif_tension_3v3.jpg)
+
 *La tension en visuel.*
 
+- Une foi les tensions vérifiées et validées, on connecte l'écran ? :
 
+  NON ! Cela n'est pas dans l'ordre des choses ! Commençons par couper le jus 😥!
+Les tensions sont vérifiées, mais il nous manque la séquence d'alimentation de l'écran ! Sans le respect de l'ordre d'application de celles-ci, vous pourriez l'endommager, il est donc encore une foi judicieux et primordiale de consulter le Datasheet de la bête 😤, vous en avez déjà marre ?! Attendez de voir ce qui suit 😋! C'est passionnant et très instructif 😊 !
+
+- Séquence pour l'ordre d'allumage :
+
+  Le démarrage obtient un ordre précis pour fonctionner, tout comme l'extinction ( charge et décharge ), le Datasheet ( encore lui 😁 ) doit forcément en informé l'utilisateur. La section "**9-2. Power On/Off Sequence**" donne cet ordre :
+
+       VBATT ( appliqué par la carte mère ) -> VCC ( 1.8V ) -> VCI ( 3.3V )
+
+  VBATT ne nous intéresse pas vraiment car il fait référence a l'alimentation via la carte mère et ici elle n'est pas présente, donc on s'en passe pour ces testes.
+
+  VCC est nôtre V+ calibré a 1.8V (VDD).
+
+  VCI est nôtre 3.3V (VCI).
+
+  Vous l'aurez sûrement deviné, il suffit donc de commencé par alimenter VDD a 1.8V , puis le VCI a 3.3V, simple comme développé une appli' en Lua 😁!
+
+Donc 1.8V puis 3.3V et le tour est jouer ! Héhéhéhé petit joueur!...
+
+Dans le principe c'est bien la méthode, **MAIS** ( il y en a toujours un 🤯! ), posez vous cette simple question, " Si il y a un ordre a respecter pour la charge, il doit aussi y avoir un ordre précis pour la décharge ?", et c'est bien le cas ! Les plus malins d'entre vous auront compris qu'il suffit de décharger en inversant le sens de déconnexion de ces tensions, **MAIS** ( encore !!! ), la séquence d'amorçage, que vous avez probablement vérifier sur le Datasheet, n'a pas été respecté en totalité, ici je ne fait référence qu'a l'alimentation, et non pas a l'initialisation complète ! 
+
+Ok, je titille... Il est possible d' alimenté puis de faire l'extinction directement a la suite, du moment que seul l'alimentation ait été réaliser et non pas le reste de la séquence ( comme Reset par exemple ) ! 
+
+Mais je tenais tout de même a clarifier ce point, qui vous le verrez est crucial pour la suite de nos tests. 🥱 C'est soporifique, je le conçois !
+
+Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VCI -> 3.3V (3V3) ( dans cette ordre ! ).
+
+![Alimentation Power On](images/PowerOn.jpg)
+
+*liaison pour l'alimentation.*
+*On alimente via "Supplies" V+ puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).
+*Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "Supplies" V+.
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
