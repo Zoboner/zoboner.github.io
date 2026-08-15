@@ -224,7 +224,34 @@ Il nous faut éclaircir quelque points avant de démarrer.
 
 ---
 
-##Le début de la fin
+## Le début de la fin
+
+### Présentation du matériel : 
+
+- Analog Discovery Studio (Digilent) :
+
+ ![ADS](images/ADS.jpg)
+
+*L'Analog Discovery Studio est un outil d'analyse multiples, offrant pas moins de 13 outils de tests et mesures de qualité professionnel.
+Voici le lien retournant les caractéristiques spécifique de ce formidable outil : https://digilent.com/reference/test-and-measurement/analog-discovery-studio/start, celui-ci offre tellement de possibilités et spécificités technique que je vous laisse le soin de les découvrir par vous même 😉.*
+
+- Canevas (Digilent) :
+
+ ![ADS Breadboard Canevas](images/ADS.jpg)
+
+*L'ADS a été conçut pour fonctionné avec des façades interchangeable ( Canevas ), connectés par aimantation et relié a un connecteur de touche multi points.
+Digilent offre une multitude de Canevas ( a acheter séparément ), tous différents pour couvrir une large gamme de travaux selon les besoins.
+Le Breadboard Canevas présenté ici, n'est ni plus, ni moins qu'une extension logique pour l'étude et la création de circuits électroniques clé en main.
+C'est avec celui-ci que le job sera réalisé.*
+
+- Logiciel WaveForms :
+
+![WaveForms logiciel](images/WFlogiciel.jpg)
+
+*L'ADS ne serait rien sans celui-ci ! Il n'est pas complémentaire, mais implicitement lié au bon fonctionnement de l'ADS. Sans lui l'ADS ne serait qu'une simple planche a pain de qualité professionnel offrant différentes tensions applicable ! Rien de plus !
+C'est la boite a outil pour l'outil lui même 😁, la parti neuronal du cerveau ! C'est lui qui offre les outils nécessaire pour œuvré dans vos travaux.*  
+
+# #
 
 Cherchons, pour commencer, quelles PINs nous serraient utile pour ces détails finaux.
 
