@@ -401,6 +401,20 @@ Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VC
 
 # #
 
+## Et maintenant ?.. DIOs ! Nous voilà 😉
+
+Comme tout bon commerçant j'offre des goodies pour rendre le client dépendant 😁!
+
+J'ai dit dépendant ?! Ouais ! Le service transitoire de données est dépendant des **DIOs** et celui-ci est essentiel pour le bon fonctionnement de l'écr... **C'est quoi des DIOs ?** Data Input Output, en gros donnée d'entré et de sortie, ce sont les données dont l'écran a besoin pour être entièrement fonctionnel, sans celles-ci l'écran ne sait pas ce qu'il doit faire ou affiché, c'est aussi simple que cela ! Pas de données, pas de traitement et donc pas d'affichage !
+
+Ici les choses ce complique quelque peu, ( et allé c'est repartis, encore des explications a dormir debout 😂! ) je vais essayé de ne pas vous perdre et puis au pire cela vous servira de berceuse 😉!
+
+Les chipsets ( composants électroniques inclus dans un circuit intégré préprogrammé ), permettant de gérer les flux de données numériques entre le ou les processeurs, la mémoire et les périphériques, se servent de données transitoire pour le bon fonctionnement d'une console de jeux ( au pif 😊 ) par exemple. Ces Données sont entrante et sortante ( traitement ) pour mettre a jour un statu ou état ( Up, Down (1 ou 0) pour faire simple ! ) et provoquer des comportements, comme un pad directionnel sur une manette de jeux qui, si l'on appuis sur une touche, envoi une donnée entrante (input), cette donnée arrive sur le chipset et est traité puis provoque une action spécifique prévu par le développeur ( je ne m'éternise pas, il y a tout un tas de post a ce sujet sur le web !). Elles sont donc d'une importance capital pour le bon fonctionnement du hardware.
+Nous allons donc configurer ces DIOs pour obtenir les informations concernant le bon fonctionnement de l'écran. C'est par cette voie que nous saurons si celui-ci est mort ou non !
+L'acquisition de ces données est donc nôtre point de finalité pour ces tests !
+
+Il faut comprendre que ces DIOs agissent différemment selon ce qu'elles servent a traités. I/O donne déjà un indice, soit elles sont entrante et dans ce cas elles servent a l'écriture ( write ), soit elles sont sortante et dans ce cas elles servent a la lecture ( read ), par exemple MISO ( Master Input Slave Output ) indique une entrée maître et une sortie esclave, elle peut donc nous servir a vérifier en lecture les données acquises, tandis que MOSI fait l'inverse en écrivant ces données utile a l'affichage d'un écran par exemple. En gros MISO envoi un retour de traitement au hardware pour confirmer le traitement et MOSI sort du Hardware pour écrire ces données vers l'écran. Bien entendu ces explications reste très basics pour la compréhension de nos actions future, si vous souhaitez en savoir plus je vous laisse le soin de faire quelques recherches sur le web une foi encore. Comme toutes données qui transite, elles obtiennent toute un niveau de tension qui peu différer, et s'est cela qui vas nous intéresser dans un premiers temps. 
+
 
 
 
