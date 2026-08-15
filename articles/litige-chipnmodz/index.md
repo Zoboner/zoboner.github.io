@@ -415,7 +415,16 @@ L'acquisition de ces données est donc nôtre point de finalité pour ces tests 
 
 Il faut comprendre que ces DIOs agissent différemment selon ce qu'elles servent a traités. I/O donne déjà un indice, soit elles sont entrante et dans ce cas elles servent a l'écriture ( write ), soit elles sont sortante et dans ce cas elles servent a la lecture ( read ), par exemple MISO ( Master Input Slave Output ) indique une entrée maître et une sortie esclave, elle peut donc nous servir a vérifier en lecture les données acquises, tandis que MOSI fait l'inverse en écrivant ces données utile a l'affichage d'un écran par exemple. En gros MISO envoi un retour de traitement au hardware pour confirmer le traitement et MOSI sort du Hardware pour écrire ces données vers l'écran. Bien entendu ces explications reste très basics pour la compréhension de nos actions future, si vous souhaitez en savoir plus je vous laisse le soin de faire quelques recherches sur le web une foi encore. Comme toutes données qui transite, elles obtiennent toute un niveau de tension qui peu différer, et s'est cela qui vas nous intéresser dans un premiers temps. 
 
+Comme nous en avons maintenant l'habitude et vue que nous ne sommes pas devins, retournons sur la Datasheet pour trouver les infos dont nous aurons besoin pour continuer nôtre aventure.
 
+Je vous aide quelque peu 😉, section "8. Input/Output Terminal Assignment" du Datasheet.
+
+Ici vous obtenez des infos sur le trafic de ces données ( I/O ), soit entrantes ( I ), soit sortante ( O ).
+
+Les DIOs qui nous intéresse pour la séquence d'Init soit , CLK, MOSI, CS et RESET, sont a un niveau logic de 1.8V ( input ), pour MISO c'est une autre affaire car sont cas est inversé, nous verrons cela bien plus tard !
+
+Le premier problème est que l'ADS ne donne pas la possibilité de calibré le niveau de voltage pour ces DIOs, il sont donc tous a 3.3V et non négociable 😁!
+C'est un problème majeur car ce flux tourne a 1.8V, nous pourrions faire dans l'élevage de porc et faire cela comme des cochons, c'est à dire, laisser tel quel et envoyer la séquence avec une tension plus élevé, mais il est dangereux et impropre de le faire de la sorte. Nous ne sommes pas de ce genre là, n'allons pas imiter les professionnels de chez **"Chip'n Modz"** 😂😂😂 
 
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
