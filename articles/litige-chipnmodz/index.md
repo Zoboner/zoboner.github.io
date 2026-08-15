@@ -583,6 +583,15 @@ Faisons cela manuellement avec les outils adéquat de WaveForms, je créerais un
 
 Je montre comment s'y prendre manuellement pour la forme, mais je tiens a préciser que ce type d'action est lourd au possible et non adapté a de grosses séquences, vous comprendrez, pour les néophytes, l'importance du scripting pour opérer 😉. Ici il ne s'agit que du RESET et MDP et nous pouvons largement dépasser les délais en millisecondes, ce ne sera pas très dramatique ici, du moment que la séquence est bien respecté.
 
+# Configuration des outil en amont de leurs utilisation :
+
+- "Static I/O" :
+
+- "Logic" :
+
+- "Protocol" :
+
+##
 # Mise sous tension avec respect du protocole :
 
 - V+ puis 3V3
