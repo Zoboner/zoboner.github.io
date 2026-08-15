@@ -471,6 +471,86 @@ Pour que tout soit bien claire :
 
 ##
 
+## Méthode d'utilisation :
+
+Maintenant que tout est en place et vérifié, il nous faut revenir a nos moutons et relancer cette séquence d'allumage complète.
+
+La séquence pour rappel est la suivante :
+
+# PowerOnSequence :
+
+- sys power on 1 (VBATT)
+
+- sys power on 2 (IOVCC)
+
+- sys power on 3 (VCI)
+
+- (wait mini 50ms)
+
+- RESTB active (system reset)
+
+- (wait mini 20ms stabilisation)
+
+- DSI or SPI (command select)
+
+- MCS access password 1 : F0h -> 5Ah -> 5Ah
+
+- 1.panel condition set
+
+- 2.analog power condition set
+
+- 3.gamma Reg. set
+
+- 4.ELVSS condition set
+
+- DSICLK enable sync video packet writing
+
+- (wait for 2 frames) 
+
+- Exit_sleep_mod 11h
+
+- (wait mini 250ms (105ms+6 frames))
+
+- set_display_on 29h
+
+- display on status
+
+# Explication : 
+
+Mise sous tension : VBATT ( probablement l’alimentation principale de la carte ), IOVCC ( VDD logique ), VCI ( tension analogique ).
+
+Dans notre cas, nous avons déjà VDD (1,8 V) et VCI (3,3 V) connectées. Le VBATT n’est pas utilisé directement, car l’écran est déjà alimenté par VCI et génère ses propres tensions internes ( ELVDD/ELVSS ).
+
+Il nous faut respecter un délai de 50 ms minimum après la mise sous tension avant d’agir sur le reset.
+
+Reset : Activer RESTB ( RESET ). La séquence dit « RESTB active ( System RESET ) », il nous faut mettre le reset à l’état bas, puis le relâcher ( haut ) après un certain temps. Dans la séquence, après le reset, il y a un délai de 20 ms minimum de stabilisation. Nous ferons donc : RESET = 0 pendant 10 ms, puis RESET = 1 et attente de 20 ms.
+
+Sélection du mode : DSI ou SPI. Nous utilisons le SPI, il faudra donc configurer l’écran pour qu’il attende des commandes SPI. Cela se fait souvent automatiquement selon le câblage ( exemple : si DSI n’est pas connecté, l’écran est en mode SPI par défaut ). Mais il se peut qu’il y ait une commande spécifique. Dans la séquence, « DSI or SPI ( Command SELECT ) » est juste une étape logique, pas une commande à envoyer. Nous verrons cela plus tard si nécessaire .
+
+Mot de passe : F0h -> 5Ah -> 5Ah ( en hexadécimal, HEX). C’est une séquence d’accès au contrôleur. Nous enverrons donc trois octets : F0, 5A, 5A. C’est très probablement une commande de déverrouillage des registres.
+
+Réglages :
+
+1. panel condition set
+
+2. analog power condition set
+
+3. gamma Reg. set
+
+4. ELVSS condition set
+   
+Ces étapes correspondent à des envois de commandes spécifiques ( x commandes avec paramètres ). Elles sont détaillées dans la Datasheet, Il nous faudra ces commandes exactes pour aller jusqu’au bout, mais pour l'instant faisons simple.
+
+DSICLK enable sync video packet writing : Cela concerne le mode DSI (vidéo), pas le mode SPI. En SPI, nous n'avons pas besoin de cela. Ignorons le.
+
+Exit_sleep_mod 11h : Envoyer la commande 11h pour sortir du mode veille.
+
+Attente : minimum 250 ms (105 ms + 6 frames, avec 1 frame = 24,17 ms). On attendra donc 250 ms.
+
+Set_display_on 29h : Envoyer la commande 29h pour allumer l’écran.
+
+Display on status : L’écran est démarré, si aucuns problème dans la séquence. 
+
 
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
