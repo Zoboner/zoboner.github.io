@@ -555,7 +555,7 @@ Display on status : L’écran est démarré, si aucuns problème dans la séque
 
 Cela donne envie, non ?
 
-Je peux comprendre qu'il n'est pas forcément évident dans sa compréhension, mais vous allez vite vous rendre compte que ceci est auusi simple que de fumer une bière et boire un clope 😂!
+Je peux comprendre qu'il n'est pas forcément évident dans sa compréhension, mais vous allez vite vous rendre compte que ceci est aussi simple que de fumer une bière et boire une clope 😂, nest ce pas JOJO ( il se reconnaitra )!
 
 Trêve de plaisanterie ! Commençons par la mise en tension puis le RESET et le mot de passe.
 
