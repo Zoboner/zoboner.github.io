@@ -24,6 +24,7 @@ Une nouvelle photo du site de ces pro' a deux mains gauches,
 **la bague y est bien présente !**... La blague aussi ! 😁 (cette dernière photo n'a pas été ajouté par la suite, mais est du a une conversion du site entre laptop/desktop et smartphone)
 
 ![Annonce](images/nouvelleIMG.png)
+
 *(Encore une preuve que les bagues sont bien présente sur les photos du site !)*
 ---
 
