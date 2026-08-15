@@ -317,6 +317,8 @@ Soyons **prudent** et ne les activons pas de suite (laissons les sorties désact
 - Vérifié les tensions de sortie aux bornes de l'ADS.
 - Trouver la séquence d'amorçage en consultant le Datasheet de l'écran ( a ne pas négliger, il en vas de la survie de l'écran ).
 
+# #
+
 **Vérification des tensions de sortie :**
 
 - V+ :
@@ -389,8 +391,15 @@ Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VC
 ![Alimentation Power On](images/PowerOn.jpg)
 
 *liaison pour l'alimentation.*
-*On alimente via "Supplies" V+ puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).
-*Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "Supplies" V+.
+
+*On alimente via "Supplies" V+ puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).*
+
+*Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "Supplies" V+.*
+
+# #
+
+
+
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
