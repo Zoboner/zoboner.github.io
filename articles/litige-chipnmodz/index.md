@@ -551,7 +551,55 @@ Set_display_on 29h : Envoyer la commande 29h pour allumer l’écran.
 
 Display on status : L’écran est démarré, si aucuns problème dans la séquence. 
 
+##
 
+Cela donne envie, non ?
+
+Je peux comprendre qu'il n'est pas forcément évident dans sa compréhension, mais vous allez vite vous rendre compte que ceci est auusi simple que de fumer une bière et boire un clope 😂!
+
+Trêve de plaisanterie ! Commençons par la mise en tension puis le RESET et le mot de passe.
+
+Mais avant ceci, Répondons à une question implicite : le courant
+
+Dans le datasheet, il est mentionné les consommations typiques ( TYP, pour Typical ) :
+
+IVCI = 40 à 72 mA (avec 3,0 V). À 3,3 V, ce sera un peu plus, mais dans cette plage, donc c'est ok.
+
+IVDD = 2 à 4 mA.
+
+Au total, l’écran consommera environ 50 à 80 mA sous VCI + VDD, ce qui est largement dans les capacités de l’ADS (700 mA pour V+). Nous pourrons surveiller le courant dans l’outil "Supplies" pour voir si l’écran obtient une consommation normale.
+
+##
+
+## Premier test : Reset et mot de passe
+
+Une fois tout câblé et vérifié, on pourra lancer :
+
+- Reset : RESET (DIO3) à 0 pendant 10 ms, puis à 1 pendant 20 ms.
+
+- Envoi du mot de passe : F0 5A 5A (3 octets) via l’outil Protocol en mode SPI (100 kHz, mode 0, MSB first, CS sur DIO2).
+
+Faisons cela manuellement avec les outils adéquat de WaveForms, je créerais un script plus tard pour automatiser.
+
+Je montre comment s'y prendre manuellement pour la forme, mais je tiens a préciser que ce type d'action est lourd au possible et non adapté a de grosses séquences, vous comprendrez, pour les néophytes, l'importance du scripting pour opérer 😉. Ici il ne s'agit que du RESET et MDP et nous pouvons largement dépasser les délais en millisecondes, ce ne sera pas très dramatique ici, du moment que la séquence est bien respecté.
+
+# Mise sous tension avec respect du protocole :
+
+- V+ puis 3V3
+- attente d'une seconde ou plus, peu importe ( on est large )
+- Reset DIO 3 ( RESET ) -> ouvrir l'outil "Static I/O" ( configurer au préalable ) -> passer le push/pull a l'etat 1 ( pas besoin d'attendre ici, car le temps sera écoulé avant que vous n'ayez eu le temps de faire la manip' ) -> patienter 1 sec puis fermé l'outil pour éviter les conflits sur DIOs entre cet outil et l’outil "Protocol".
+- lancer l'outil "Logic" ( configurer au préalable ), il permet d'obtenir un visuel sur l'acquisition des données.
+- lancer "Protocol" ( configurer au préalable ), il envoi la séquence en HEX.
+
+Vous venez de d'effectuer votre premier transfère de données.
+
+Il devrait vous donner ceci comme résultat dans "Logic" :
+
+![Reset + MDP](images/LogicDataRST&MDP.png)
+
+*( si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole ! )*
+
+##
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
