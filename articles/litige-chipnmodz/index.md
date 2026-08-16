@@ -461,13 +461,21 @@ Pour que tout soit bien claire :
 
 ![Câblage DIOs + pont diviseur](images/DIO_Div.jpg)
 
-*(Car je sais que tout n'est parfois pas si claire pour tous, une image est bien plus explicite 😎)*
+*(Car je sais que tout n'est parfois pas si claire pour tous... Une image est bien plus explicite 😎)*
 
 ##
 
 [A venir : Level Shifter, solution ultra propre.]
 
+*J'ai tenté de commander un CI ( IC ) de chez Texas Instrument model TXS0108EQDGSRQ1, mais il est très compliqué de le trouver par chez nous, où alors malheureusement vendu a un prix non attractif ( l'Europe c'est de la M***E ! ) et des frais de port hallucinant ( USA 28$ mini, EU 15€ mini pour un CI d'une valeur de 1.8€ ! Qu'il se le garde ! ), j'ai donc opté pour un module Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E), c'est dommage car j'aurais voulu vous montrer l'assemblage complet du CI... Nous, nous contenterons de cette solution tout en un 💔 !*
+
 [A venir : Fabrication Home made de Level Shifter via MOSFET et Résistance.]
+
+*J'ai par la même occasion, commandé un lot de MOSFET 2N7000 ( THT ), il démontrera l'importance de connaitre les bases de l'éléctro' pour ce dépatouiller avec peu de moyens 😉! Bien entendu il n'interférera pas avec l'écran, ce sera simplement une démo a part !*
+
+[A venir : Développement sur écran oled monochrome SPI a 7 broches.]
+
+*Quitte a faire, amusons nous quelques peu 😁! Nous créerons par simple développement, un affichage standard, puis développerons un jeux en utilisant des méthodes plus complexe dans notre développement ! Vous comprendrez ainsi que ce type d'écran ( bien moins compliqué que celui de la Vita ! ), est un bon départ pour la compréhension et l'analyse protocolaire ! Puis si j'en ai le temps, nous ferons de même avec un écran plus complexe avec canaux RGB impliquant l'utilisation de séquences complexe lié a l'affichage de millions de possibilité colorimétrique. Vous verrez que c'est une autre paire de manche, mais est extrêmement formateur !*
 
 ##
 
