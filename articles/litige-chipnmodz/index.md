@@ -494,11 +494,7 @@ Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme cec
 
 ![Montage Primmaire](images/prim.JPG)
 
-*(Ca n'est pas claire comme de l'eau boueuse ? Allez je vous offre un plan épuré comme a l'instant.)*
-
-![Ceci est plus claire 2](images/claretéeComplet.png)
-
-*Ici encore je n'ai pas mis les 4 DIOs car il suffit de réitérer en copiant ce 1er apport (DIOs 0 CLK))*
+*(J'espère que cette foi tout est compréhensible, les amis 😋)*
 
 ##
 
@@ -506,9 +502,13 @@ Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme cec
 
 *J'ai tenté de commander un CI ( IC ) de chez Texas Instrument model TXS0108EQDGSRQ1, mais il est très compliqué de le trouver par chez nous, où alors malheureusement vendu a un prix non attractif ( l'Europe c'est de la 🤬 ! ) et des frais de port hallucinant ( USA 28$ mini, EU 15€ mini pour un CI d'une valeur de 1.8€ ! Qu'il se le garde ! ), j'ai donc opté pour un module Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E), c'est dommage car j'aurais voulu vous montrer l'assemblage complet du CI... Nous, nous contenterons de cette solution tout en un 💔 !*
 
+##
+
 [A venir : Fabrication Home made de Level Shifter via MOSFET et Résistance.]
 
 *J'ai par la même occasion, commandé un lot de MOSFET 2N7000 ( THT ), il démontrera l'importance de connaitre les bases de l'éléctro' pour ce dépatouiller avec peu de moyens 😉! Bien entendu il n'interférera pas avec l'écran, ce sera simplement une démo a part !*
+
+##
 
 [A venir : Développement sur écran oled monochrome SPI a 7 broches.]
 
