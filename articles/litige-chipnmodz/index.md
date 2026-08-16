@@ -490,6 +490,16 @@ Pour que tout soit bien claire :
 
 *(Gris = GND; Bleu = DIOs 0 (CLK); Orange = Resistance 1.5k; Vert = Resistance 1.8k; Violet = Liaison pour vérification de la tension.)*
 
+Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme ceci :
+
+![Montage Primmaire](images/prim.JPG)
+
+*(Ca n'est pas claire comme de l'eau boueuse ? Allez je vous offre un plan épuré comme a l'instant.)*
+
+![Ceci est plus claire 2](images/claretéeComplet.png)
+
+*Ici encore je n'ai pas mis les 4 DIOs car il suffit de réitérer en copiant ce 1er apport (DIOs 0 CLK))*
+
 ##
 
 [A venir : Level Shifter, solution ultra propre.]
