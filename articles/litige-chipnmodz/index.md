@@ -467,7 +467,7 @@ Pour que tout soit bien claire :
 
 [A venir : Level Shifter, solution ultra propre.]
 
-*J'ai tenté de commander un CI ( IC ) de chez Texas Instrument model TXS0108EQDGSRQ1, mais il est très compliqué de le trouver par chez nous, où alors malheureusement vendu a un prix non attractif ( l'Europe c'est de la M***E ! ) et des frais de port hallucinant ( USA 28$ mini, EU 15€ mini pour un CI d'une valeur de 1.8€ ! Qu'il se le garde ! ), j'ai donc opté pour un module Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E), c'est dommage car j'aurais voulu vous montrer l'assemblage complet du CI... Nous, nous contenterons de cette solution tout en un 💔 !*
+*J'ai tenté de commander un CI ( IC ) de chez Texas Instrument model TXS0108EQDGSRQ1, mais il est très compliqué de le trouver par chez nous, où alors malheureusement vendu a un prix non attractif ( l'Europe c'est de la 🤬 ! ) et des frais de port hallucinant ( USA 28$ mini, EU 15€ mini pour un CI d'une valeur de 1.8€ ! Qu'il se le garde ! ), j'ai donc opté pour un module Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E), c'est dommage car j'aurais voulu vous montrer l'assemblage complet du CI... Nous, nous contenterons de cette solution tout en un 💔 !*
 
 [A venir : Fabrication Home made de Level Shifter via MOSFET et Résistance.]
 
