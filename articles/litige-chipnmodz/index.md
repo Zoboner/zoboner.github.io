@@ -478,11 +478,15 @@ Pour que tout soit bien claire :
 
 ![Câblage DIOs + pont diviseur](images/DIO_Div.JPG)
 
-*(Car je sais que tout n'est parfois pas si claire pour tous... Une image sera plus explicite 😎)*
+*(Car je sais que tout n'est parfois pas si claire pour tous... Une image sera bien plus explicite 😂🤣😂! Je suis désolé mais je n'ai pas réussis a prendre un meilleur cliché. Trop éloigné, c'est pas terrible et de près cela donne ceci ! Donc pour la clarté nous repasserons plus tard !)*
 
 ![pont diviseur](images/pont_div.JPG)
 
 *(La méthode des résistances monté en série, pour l'obtention de la bonne valeur.)*
+
+![Ceci est plus claire](images/claretéeDIOs.png)
+
+*(Visualisation d'une des DIOs par schématisation, j'espère que cela augmente la clarté ! 😎)* 
 
 ##
 
