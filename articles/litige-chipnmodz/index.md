@@ -233,7 +233,7 @@ Il nous faut éclaircir quelque points avant de démarrer.
 
 - Analog Discovery Studio (Digilent) :
 
- ![ADS](images/ADS.jpg)
+ ![ADS](images/ADS.png)
  *(photo extraite du web.)*
 
  J'ai encadré les éléments utile pour la faisabilité de nos tests sur la photo de l'ADS si dessus :
@@ -252,12 +252,18 @@ Voici le lien retournant les caractéristiques spécifique de ce formidable outi
 ##
 - Canevas (Digilent) :
 
-*Le Canevas représente la grosse partie blanche centrale sur la photo ci dessus.
+*Le Canevas représente la grosse partie blanche centrale sur la photo ci dessus.*
 
 *L'ADS a été conçut pour fonctionné avec des façades interchangeable ( Canevas ), connectés par aimantation et relié a un connecteur de touche multi points.
 Digilent offre une multitude de Canevas ( a acheter séparément ), tous différents pour couvrir une large gamme de travaux selon les besoins.
 Le Breadboard Canevas présenté ici, n'est ni plus, ni moins qu'une extension logique pour l'étude et la création de circuits électroniques clé en main.
 C'est avec celui-ci que le job sera réalisé.*
+
+*Il existe différents Canevas, ayant tous une configuration bien précise, facilitant le travail pour vos actions et projets. Par exemple j'ai en ma possession une **carte de développement massive FPGA Spartan S7-50 de chez Xilinx**, qui m'a servit a la modification comportementale d'une console de jeux de chez SEGA, il aurait été intéressant d'avoir le Canevas FPGA adéquat, ce qui simplifie grandement les branchements et la mise en place de cette dernière et épure bien enttendue le poste de travail ! Je ne dispose pas de ce Canevas malheureusement !*
+
+![Arty S7-50](images/Arty.jpg)
+
+*La carte ARTY S7-50, pour les curieux"
 
 ##
 - Logiciel WaveForms :
