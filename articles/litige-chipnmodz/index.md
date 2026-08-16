@@ -371,9 +371,7 @@ Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForm
 
 - 3V3 :
 
-  Passons maintenant a la partie 3.3V de l'alimentation. l'ADS peu fournir directement cette tension stabilisée sans passé par le logiciel WaveForms, il suffit de connecter un câble sur la borne prévue a cet effet et de l'activer par le biais de l'interrupteur assigné a cette tension, rien de plus !
-
-![Configuration de la tension 3v3 de l'ADS](images/conf_3V3.jpg)
+  Passons maintenant a la partie 3.3V de l'alimentation. l'ADS peu fournir directement cette tension stabilisée sans passé par le logiciel WaveForms, il suffit de connecter un câble sur la borne prévue a cet effet et de l'activer par le biais de l'interrupteur switch assigné a cette tension ( ref : flèche verte sur le Canevas, photo si dessus ), rien de plus !
 
 Ensuite il suffit de répéter l'opération de vérification de la tension via l'outil "Voltmeter" sur le logiciel en déplaçant simplement le câble de test sur la sortie en ligne adéquat.
 
