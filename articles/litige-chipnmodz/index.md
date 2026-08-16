@@ -363,13 +363,13 @@ Une foi activé et non connecté a l'écran, il suffira de connecter les pinces 
 
 *(⚠ J'ai fait une **erreur** grossière en dessinant une **flèche verte pour le switch V+** ( interrupteur ) sur la photo si dessus, **il ne doit pas être activé ici**, mais dans le logiciel a l'outil "Supplies", **seul 3V3** s'active par ce biais, toutes mes excuse pour le désagrément !)*
 
-*(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.)*
+*(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard pour faire ces vérifications.)*
 
 Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForms pour y relever la valeur en acquisition, qui doit correspondre a la tension ordonnée précédemment via l'outil "Supplies" pour V+. Soit 1V8. 
 
 ![Vérif' Voltmeter 1V8](images/verif_tension_1v8.jpg)
 
-*(Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V, la légère chute de cette tension est tout a fait normal, le circuit de l'ADS donne une légère résistance, d'où cette valeur amoindri.)*
+*(Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V)*
 
 - 3V3 :
 
