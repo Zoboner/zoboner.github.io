@@ -361,13 +361,13 @@ Une foi activé et non connecté a l'écran, il suffira de connecter les pinces 
 
 ![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.png)
 
-*(⚠ J'ai fait une **erreur** grossière en dessinant une **flèche verte pour le switch V+** ( interrupteur ) sur la photo si dessus, **il ne doit pas être activé ici**, mais dans le logiciel a l'outil "Supplies", **seul 3V3** s'active par ce biais, toutes mes excuse pour le désagrément !)*
+*(⚠ ne pas oublié d'activer les interrupteurs V+ et 3.3V correspondants pour l'analyse des ces tensions. Gris = GND, Orange = 1.8V ( V+ ), Rouge = 3.3V ( 3V3 ), flèches Verte = interrupteur d'activation des tensions ( V+ et 3V3 ), ronds Vert = points de vérifications, carrés Vert = leds d'activation des tensions.)*
 
 *(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard pour faire ces vérifications.)*
 
 Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForms pour y relever la valeur en acquisition, qui doit correspondre a la tension ordonnée précédemment via l'outil "Supplies" pour V+. Soit 1V8. 
 
-![Vérif' Voltmeter 1V8](images/verif_tension_1v8.jpg)
+![Vérif' Voltmeter 1V8](images/verif_tension_1v8.png)
 
 *(Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V)*
 
@@ -375,9 +375,9 @@ Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForm
 
   Passons maintenant a la partie 3.3V de l'alimentation. l'ADS peu fournir directement cette tension stabilisée sans passé par le logiciel WaveForms, il suffit de connecter un câble sur la borne prévue a cet effet et de l'activer par le biais de l'interrupteur switch assigné a cette tension ( ref : flèche verte sur le Canevas, photo si dessus ), rien de plus !
 
-Ensuite il suffit de répéter l'opération de vérification de la tension via l'outil "Voltmeter" sur le logiciel en déplaçant simplement le câble de test sur la sortie en ligne adéquat.
+Ensuite il suffit de répéter l'opération de vérification de la tension via l'outil "Voltmeter" sur le logiciel en déplaçant simplement le câble de test sur la sortie en ligne adéquat soit 3.3V ( 3V3 ).
 
-![Vérif' Voltmeter 3V3](images/verif_tension_3v3.jpg)
+![Vérif' Voltmeter 3V3](images/verif_tension_3v3.png)
 
 *(La tension en visuel.)*
 
@@ -392,7 +392,7 @@ Les tensions sont vérifiées, mais il nous manque la séquence d'alimentation d
 
        VBATT ( appliqué par la carte mère ) -> VCC ( 1.8V ) -> VCI ( 3.3V )
 
-  VBATT ne nous intéresse pas vraiment car il fait référence a l'alimentation via la carte mère et ici elle n'est pas présente, donc on s'en passe pour ces testes.
+  VBATT ne nous intéresse pas vraiment car il fait référence a l'alimentation via la carte mère et ici elle n'est pas présente, donc on s'en passe pour ce test.
 
   VCC est nôtre V+ calibré a 1.8V (VDD).
 
@@ -408,7 +408,7 @@ Ok, je titille... Il est possible d' alimenté puis de faire l'extinction direct
 
 Mais je tenais tout de même a clarifier ce point, qui vous le verrez est crucial pour la suite de nos tests. 🥱 C'est soporifique, je le conçois !
 
-Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VCI -> 3.3V (3V3) ( dans cette ordre ! ).
+Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VCI -> 3.3V (3V3) ( dans cette ordre ! ), avant que vous ne vous endormiez tous 🥱😴. On ce réveille les mec !... N'oublions pas de connecter le GND de celui-ci au plan de masse de l'ADS.
 
 ![Alimentation Power On](images/PowerOn.jpg)
 
