@@ -361,6 +361,8 @@ Une foi activé et non connecté a l'écran, il suffira de connecter les pinces 
 
 ![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.png)
 
+*(⚠ J'ai fait une erreur en dessinant une flèche verte pour le switch V+ ( interrupteur ) sur la photo si dessus, il ne doit pas être activé ici, mais dans le logiciel a l'outil "Supplies", toutes mes excuse pour le désagrément !)*
+
 *(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.)*
 
 Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForms pour y relever la valeur en acquisition, qui doit correspondre a la tension ordonnée précédemment via l'outil "Supplies" pour V+. Soit 1V8. 
