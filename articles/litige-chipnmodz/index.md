@@ -486,7 +486,9 @@ Pour que tout soit bien claire :
 
 ![Ceci est plus claire](images/claretéeDIOs.png)
 
-*(Visualisation d'une des DIOs par schématisation, j'espère que cela augmente la clarté ! 😎)* 
+*(Visualisation d'une des DIOs par schématisation, j'espère que cela augmente la clarté ! 😎)*
+
+*(Gris = GND; Bleu = DIOs 0 (CLK); Orange = Resistance 1.5k; Vert = Resistance 1.8k; Violet = Liaison pour vérification de la tension.)*
 
 ##
 
