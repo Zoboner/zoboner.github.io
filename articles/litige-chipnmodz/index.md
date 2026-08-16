@@ -268,8 +268,6 @@ C'est avec celui-ci que le job sera réalisé.*
 ##
 - Logiciel WaveForms :
 
-![WaveForms logiciel](images/WFlogiciel.jpg)
-
 *L'ADS ne serait rien sans celui-ci ! Il n'est pas complémentaire, mais implicitement lié au bon fonctionnement de l'ADS. Sans lui l'ADS ne serait qu'une simple planche a pain de qualité professionnel offrant différentes tensions applicable ! Rien de plus !
 C'est la boite a outil pour l'outil lui même 😁, la parti neuronal du cerveau ! C'est lui qui offre les outils nécessaire pour œuvré dans vos travaux.*  
 
@@ -279,7 +277,7 @@ C'est la boite a outil pour l'outil lui même 😁, la parti neuronal du cerveau
 
 Cherchons, pour commencer, quelles PINs nous serraient utile pour ces détails finaux.
 
-Le précieux **Datasheet de l'écran** est **indispensable** pour les actions qui vont suivre
+Le précieux **Datasheet de l'écran**, téléchargeable plus haut dans ce pavé, est **indispensable** pour les actions qui vont suivre .
 
 Voici les 7 connexions indispensables pour une simple initialisation :
 
@@ -361,7 +359,7 @@ Soyons **prudent** et ne les activons pas de suite (laissons les sorties désact
 
 Une foi activé et non connecté a l'écran, il suffira de connecter les pinces sur la bornes respectives de la partie Oscilloscope de l'ADS ou bien d'y connecter un câble de teste sur la bornes +, sous-jacente a cette même partie.
 
-![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.jpg)
+![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.png)
 
 *(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard.)*
 
