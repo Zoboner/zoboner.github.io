@@ -369,7 +369,7 @@ Une foi le câble insérer, il suffit d'ouvrir l'outil "Voltmeter" dans WaveForm
 
 ![Vérif' Voltmeter 1V8](images/verif_tension_1v8.png)
 
-*(Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V)*
+*(Photo de l'outil "Volmeter" qui donne bien une tension ~= 1.8V, fiez vous au trait rouge et non pas a la valeur, car j'ai volontairement couper le jus, pour comprendre que cet outil donne toujours la dernière valeur maxi acquise. Ici nous voyons très clairement que l'aiguille rouge est juste en dessous de 2 Volt, soit 1.8V et des bananes )*
 
 - 3V3 :
 
@@ -379,7 +379,7 @@ Ensuite il suffit de répéter l'opération de vérification de la tension via l
 
 ![Vérif' Voltmeter 3V3](images/verif_tension_3v3.png)
 
-*(La tension en visuel.)*
+*( La tension en visuel et ce coup ci j'ai pris le screenshot avec la tensions active, pour une meilleur compréhension. Ici nous distinguons a peine l'aiguille rouge représentant la valeur maxi acquise, mais nous pouvons nous référer a la valeur 3.3094V qui est bien celle attendue )*
 
 - Une foi les tensions vérifiées et validées, on connecte l'écran ? :
 
@@ -408,7 +408,7 @@ Ok, je titille... Il est possible d' alimenté puis de faire l'extinction direct
 
 Mais je tenais tout de même a clarifier ce point, qui vous le verrez est crucial pour la suite de nos tests. 🥱 C'est soporifique, je le conçois !
 
-Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VCI -> 3.3V (3V3) ( dans cette ordre ! ), avant que vous ne vous endormiez tous 🥱😴. On ce réveille les mec !... N'oublions pas de connecter le GND de celui-ci au plan de masse de l'ADS.
+Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VCI -> 3.3V (3V3) ( dans cette ordre ! ), avant que vous ne vous endormiez tous 🥱😴. On ce réveille les mec !... N'oublions pas de connecter le GND de ce dernier, au plan de masse de l'ADS.
 
 ![Alimentation Power On](images/PowerOn.jpg)
 
