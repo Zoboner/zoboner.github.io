@@ -379,7 +379,7 @@ Ensuite il suffit de répéter l'opération de vérification de la tension via l
 
 ![Vérif' Voltmeter 3V3](images/verif_tension_3v3.png)
 
-*( La tension en visuel et ce coup ci j'ai pris le screenshot avec la tensions active, pour une meilleur compréhension. Ici nous distinguons a peine l'aiguille rouge représentant la valeur maxi acquise, mais nous pouvons nous référer a la valeur 3.3094V qui est bien celle attendue )*
+*( La tension en visuel, et ce coup ci, j'ai pris le screenshot avec la tensions active, pour une meilleur compréhension. Ici nous distinguons a peine l'aiguille rouge représentant la valeur maxi acquise, mais nous pouvons nous référer a la valeur 3.3094V ( sous les aiguilles ) qui est bien celle attendue, soit 3.3V )*
 
 - Une foi les tensions vérifiées et validées, on connecte l'écran ? :
 
@@ -398,7 +398,7 @@ Les tensions sont vérifiées, mais il nous manque la séquence d'alimentation d
 
   VCI est nôtre 3.3V (VCI).
 
-  Vous l'aurez sûrement deviné, il suffit donc de commencé par alimenter VDD a 1.8V , puis le VCI a 3.3V, simple comme développé une appli' en Lua 😁!
+  Vous l'aurez sûrement deviné, il suffit donc de commencé par alimenter VDD a 1.8V , puis VCI a 3.3V, simple comme développé une appli' en Lua 😁!
 
 Donc 1.8V puis 3.3V et le tour est jouer ! Héhéhéhé petit joueur!...
 
@@ -414,9 +414,9 @@ Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VC
 
 *(liaison pour l'alimentation.)*
 
-*(On alimente via "Supplies" V+ puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).)*
+*(On alimente via "Supplies" V+ puis "push/pull" pour l'activer sur la breadboard, puis "push/pull" 3.3V ( si les tension ont été vérifiées au préalable, bien entendu ).)*
 
-*(Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "Supplies" V+.)*
+*(Et pour l'extinction ( si besoin ), "push/pull" 3V3 puis "push/pull" V+. C'est l'exacte inverse de l'initialisation)*
 
 # #
 
@@ -428,11 +428,11 @@ J'ai dit dépendant ?! Ouais ! Le service transitoire de données est dépendant
 
 Ici les choses ce complique quelque peu, ( et allé c'est repartis, encore des explications a dormir debout 😂! ) je vais essayé de ne pas vous perdre et puis au pire cela vous servira de berceuse 😉!
 
-Les chipsets ( composants électroniques inclus dans un circuit intégré préprogrammé ), permettant de gérer les flux de données numériques entre le ou les processeurs, la mémoire et les périphériques, se servent de données transitoire pour le bon fonctionnement d'une console de jeux ( au pif 😊 ) par exemple. Ces Données sont entrante et sortante ( traitement ) pour mettre a jour un statu ou état ( Up, Down (1 ou 0) pour faire simple ! ) et provoquer des comportements, comme un pad directionnel sur une manette de jeux qui, si l'on appuis sur une touche, envoi une donnée entrante (input), cette donnée arrive sur le chipset et est traité puis provoque une action spécifique prévu par le développeur ( je ne m'éternise pas, il y a tout un tas de post a ce sujet sur le web !). Elles sont donc d'une importance capital pour le bon fonctionnement du hardware.
+Les chipsets ( composants électroniques inclus dans un circuit intégré préprogrammé ), permettant de gérer les flux de données numériques entre le ou les processeurs, la mémoire et les périphériques, se servent de données transitoire pour le bon fonctionnement d'une console de jeux ( au pif 😊 ) par exemple. Ces Données sont entrante et sortante ( traitement ) pour mettre a jour un statu ou état ( Up, Down (1 ou 0) pour faire simple ! ) et provoquer des comportements, comme un pad directionnel sur une manette de jeux qui, si l'on appuis sur une touche, envoi une donnée entrante (input), cette donnée arrive sur le chipset et est traité puis provoque une action spécifique prévu par le développeur ( là encore je simplifie et je ne m'éternise pas, il y a tout un tas de post a ce sujet sur le web !). Elles sont donc d'une importance capital pour le bon fonctionnement du hardware.
 Nous allons donc configurer ces DIOs pour obtenir les informations concernant le bon fonctionnement de l'écran. C'est par cette voie que nous saurons si celui-ci est mort ou non !
 L'acquisition de ces données est donc nôtre point de finalité pour ces tests !
 
-Il faut comprendre que ces DIOs agissent différemment selon ce qu'elles servent a traités. I/O donne déjà un indice, soit elles sont entrante et dans ce cas elles servent a l'écriture ( write ), soit elles sont sortante et dans ce cas elles servent a la lecture ( read ), par exemple MISO ( Master Input Slave Output ) indique une entrée maître et une sortie esclave, elle peut donc nous servir a vérifier en lecture les données acquises, tandis que MOSI fait l'inverse en écrivant ces données utile a l'affichage d'un écran par exemple. En gros MISO envoi un retour de traitement au hardware pour confirmer le traitement et MOSI sort du Hardware pour écrire ces données vers l'écran. Bien entendu ces explications reste très basics pour la compréhension de nos actions future, si vous souhaitez en savoir plus je vous laisse le soin de faire quelques recherches sur le web une foi encore. Comme toutes données qui transite, elles obtiennent toute un niveau de tension qui peu différer, et s'est cela qui vas nous intéresser dans un premiers temps. 
+Il faut comprendre que ces DIOs agissent différemment selon ce qu'elles servent a traités. I/O donne déjà un indice, soit elles sont entrante et dans ce cas elles servent a l'écriture ( write ), soit elles sont sortante et dans ce cas elles servent a la lecture ( read ), par exemple MISO ( Master Input Slave Output ) indique une entrée maître et une sortie esclave, elle peut donc nous servir a vérifier en lecture les données acquises, tandis que MOSI fait l'inverse en écrivant ces données utile a l'affichage d'un écran par exemple. En gros MISO envoi un retour de traitement au hardware pour confirmer le traitement et MOSI sort du Hardware pour écrire ces données vers l'écran. Bien entendu ces explications reste très basics pour la compréhension de nos actions future, si vous souhaitez en savoir plus je vous laisse le soin de faire quelques recherches sur le web une foi encore. Comme toutes données qui transite, elles obtiennent toutes un niveau de tension qui peu différer, et s'est cela qui vas nous intéresser dans un premiers temps. 
 
 Comme nous en avons maintenant l'habitude et vue que nous ne sommes pas devins, retournons sur la Datasheet pour trouver les infos dont nous aurons besoin pour continuer nôtre aventure.
 
@@ -445,13 +445,13 @@ Les DIOs qui nous intéresse pour la séquence d'Init soit , CLK, MOSI, CS et RE
 Le premier problème est que l'ADS ne donne pas la possibilité de calibré le niveau de voltage pour ces DIOs, il sont donc tous a 3.3V et non négociable 😁!
 C'est un problème majeur car ce flux tourne a 1.8V pour l'écran, nous pourrions faire dans l'élevage de porc et faire cela comme des cochons, c'est à dire, laisser tel quel et envoyer la séquence avec une tension plus élevé, mais il est dangereux et impropre de le faire de la sorte. Nous ne sommes pas de ce genre là, n'allons pas imiter les professionnels de chez **"Chip'n Modz"** 😂😂😂.
 
-   -Solutions n°1 : utiliser un adaptateur de niveau (level shifter) 3,3 V vers 1,8 V. C’est un petit module très courant (par exemple basé sur le TXS0102 ou le PCA9306) ou le fabriquer soit même par le biais de transistors MOSFET et de résistances ( la base ), ceci offre une bonne stabilité et est plus que performant.
+   -Solutions n°1 : utiliser un adaptateur de niveau (level shifter) 3.3V vers 1.8V. C’est un petit module très courant (par exemple basé sur le TXS0102 ou le PCA9306) il est possible de le fabriquer soit même par le biais de transistors MOSFET et de résistances ( la base ), ceci offre une bonne stabilité et est plus que performant.
 
    -Solution n°2 : Créer un pont diviseur résistif pour chaque signal avec 2 résistances par signal ( c'est le plus simple ), ceci est moins performant que la solution n°1 mais est tout a fait acceptable dans notre cas.
 
-Comme tout bon électroniciens, j'ai une montagne de composants près a êtres déployés pour mes projets, il vas de soit que j'ai des dizaines de grosse boites pour ranger les centaines de petites boites qui regroupe ces milliers de composant et bien entendus certains sont bien répertoriés dans un carnet pour pouvoir y mettre la main dessus rapidos, MAIS ( toujours ce fameux MAIS !) il y a aussi les composants acheté a la volé ( il n'y en a jamais assez 🤯 ), bien rangé dans de jolies boites mais non répertorier par manque de temps... Je ne retrouve pas mes level shifters, j'ai donc opté, pour avancer plus vite, pour la seconde solutions.
+Comme tout bon électroniciens, j'ai une montagne de composants près a êtres déployés pour mes projets, il vas de soit que j'ai des dizaines de grosse boites pour ranger les centaines de petites boites qui regroupe ces milliers de composants et bien entendus certains sont bien répertoriés dans un carnet pour pouvoir y mettre la main dessus rapidos, MAIS ( toujours ce fameux MAIS !) il y a aussi les composants acheté a la volé ( il n'y en a jamais assez 🤯 ), bien rangé dans de jolies boites mais non répertorier par manque de temps... Je ne retrouve pas mes level shifters, j'ai donc opté, pour avancer plus vite, pour la seconde solutions.
 Je fabriquerais un adaptateur de niveau plus tard pour obtenir une solution plus propre et montré comment s'y prendre, je pense que cela pourrait intéresser quelques uns d'entre vous, pour ce dépanner !
-J'ai aussi commandé ceux-ci et quelques autres éléments pour de futures projets assimilable a celui-ci et pour celui-ci ( rappelez vous de MISO qui demande a fonctionner en inversion ! ) ! Mais en attendant, nous allons faire avec la solution du pauvre, en utilisant quelques résistances 😉, c'est pas dure, c'est peu coûteux et ça dépanne max !
+J'ai aussi commandé ceux-ci, un module adaptateur de niveaux et quelques autres éléments pour de futures projets assimilable a celui-ci et pour celui-ci ( rappelez vous de MISO qui demande a fonctionner en inversion ! ) ! Mais en attendant, nous allons faire avec la solution du pauvre, en utilisant quelques résistances 😉, c'est pas dure, c'est peu coûteux et ça dépanne max !
 
 ##
 
@@ -476,9 +476,13 @@ Pour que tout soit bien claire :
 - DIO -> R1 -> Signal -> R2 -> GND 
 - DIO 0 -> 1.5k -> CLK -> 1.8k -> GND
 
-![Câblage DIOs + pont diviseur](images/DIO_Div.jpg)
+![Câblage DIOs + pont diviseur](images/DIO_Div.JPG)
 
-*(Car je sais que tout n'est parfois pas si claire pour tous... Une image est bien plus explicite 😎)*
+*(Car je sais que tout n'est parfois pas si claire pour tous... Une image sera plus explicite 😎)*
+
+![pont diviseur](images/pont_div.JPG)
+
+*(La méthode des résistances monté en série, pour l'obtention de la bonne valeur.)*
 
 ##
 
