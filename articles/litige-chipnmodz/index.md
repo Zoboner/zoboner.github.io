@@ -234,6 +234,7 @@ Il nous faut éclaircir quelque points avant de démarrer.
 - Analog Discovery Studio (Digilent) :
 
  ![ADS](images/ADS.jpg)
+ *(photo extraite du web.)*
 
  J'ai encadré les éléments utile pour la faisabilité de nos tests sur la photo de l'ADS si dessus :
 
@@ -251,7 +252,7 @@ Voici le lien retournant les caractéristiques spécifique de ce formidable outi
 ##
 - Canevas (Digilent) :
 
- ![ADS Breadboard Canevas](images/ADS.jpg)
+*Le Canevas représente la grosse partie blanche centrale sur la photo ci dessus.
 
 *L'ADS a été conçut pour fonctionné avec des façades interchangeable ( Canevas ), connectés par aimantation et relié a un connecteur de touche multi points.
 Digilent offre une multitude de Canevas ( a acheter séparément ), tous différents pour couvrir une large gamme de travaux selon les besoins.
