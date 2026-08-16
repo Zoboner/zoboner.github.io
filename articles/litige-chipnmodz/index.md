@@ -263,7 +263,7 @@ C'est avec celui-ci que le job sera réalisé.*
 
 ![Arty S7-50](images/Arty.JPG)
 
-*La carte ARTY S7-50, pour les curieux"*
+*(La carte ARTY S7-50, pour les curieux)*
 
 ##
 - Logiciel WaveForms :
