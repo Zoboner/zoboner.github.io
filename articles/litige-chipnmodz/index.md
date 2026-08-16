@@ -235,15 +235,20 @@ Il nous faut éclaircir quelque points avant de démarrer.
 
  ![ADS](images/ADS.jpg)
 
+ J'ai encadré les éléments utile pour la faisabilité de nos tests sur la photo de l'ADS si dessus :
+
+-Rouge = Alim' générale; 
+
+-Bleu = les 2 bancs des DIOs;
+
+-Jaune = la fiche mâle pour les outils de mesures, le switch de sélection et les bornes secondaire servant aussi pour les mesures; 
+
+-Orange = Les interrupteurs de tension ( V+ et 3V3 ) et leurs leds respectives.
+
 *L'Analog Discovery Studio est un outil d'analyse multiples, offrant pas moins de 13 outils de tests et mesures de qualité professionnel.
 Voici le lien retournant les caractéristiques spécifique de ce formidable outil : https://digilent.com/reference/test-and-measurement/analog-discovery-studio/start, celui-ci offre tellement de possibilités et spécificités technique que je vous laisse le soin de les découvrir par vous même 😉.*
 
-*J'ai encadré les éléments utile pour la faisabilité de nos tests : 
-Rouge = Alim' générale; 
-Bleu = les 2 bancs des DIOs; 
-Jaune = la fiche mâle pour les outils de mesures, le switch de sélection et les bornes secondaire servant aussi pour les mesures; 
-Orange = Les interrupteurs de tension ( V+ et 3V3 ) et leurs leds respectives.*
-
+##
 - Canevas (Digilent) :
 
  ![ADS Breadboard Canevas](images/ADS.jpg)
@@ -253,6 +258,7 @@ Digilent offre une multitude de Canevas ( a acheter séparément ), tous différ
 Le Breadboard Canevas présenté ici, n'est ni plus, ni moins qu'une extension logique pour l'étude et la création de circuits électroniques clé en main.
 C'est avec celui-ci que le job sera réalisé.*
 
+##
 - Logiciel WaveForms :
 
 ![WaveForms logiciel](images/WFlogiciel.jpg)
