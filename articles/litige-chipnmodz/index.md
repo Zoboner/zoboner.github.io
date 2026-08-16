@@ -261,7 +261,7 @@ C'est avec celui-ci que le job sera réalisé.*
 
 *Il existe différents Canevas, ayant tous une configuration bien précise, facilitant le travail pour vos actions et projets. Par exemple j'ai en ma possession une **carte de développement massive FPGA Spartan S7-50 de chez Xilinx**, qui m'a servit a la modification comportementale d'une console de jeux de chez SEGA, il aurait été intéressant d'avoir le Canevas FPGA adéquat, ce qui simplifie grandement les branchements et la mise en place de cette dernière et épure bien enttendue le poste de travail ! Je ne dispose pas de ce Canevas malheureusement !*
 
-![Arty S7-50](images/Arty.jpg)
+![Arty S7-50](images/Arty.JPG)
 
 *La carte ARTY S7-50, pour les curieux"
 
