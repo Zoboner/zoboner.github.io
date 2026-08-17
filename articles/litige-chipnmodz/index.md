@@ -321,9 +321,7 @@ Cela signifie que **l’écran devrait démarrer avec uniquement VDD et VCI**, �
 
 ![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
 
-[!WARNING]
-
-*(Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran )*
+*(⚠Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran)*
 
 ---
 
@@ -363,7 +361,7 @@ Une foi activé et non connecté a l'écran, il suffira de connecter les pinces 
 
 ![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.png)
 
-*([!WARNING] ne pas oublié d'activer les interrupteurs V+ et 3.3V correspondants pour l'analyse des ces tensions. Gris = GND, Orange = 1.8V ( V+ ), Rouge = 3.3V ( 3V3 ), flèches Verte = interrupteur d'activation des tensions ( V+ et 3V3 ), ronds Vert = points de vérifications, carrés Vert = leds d'activation des tensions.)*
+*(⚠Ne pas oublié d'activer les interrupteurs V+ et 3.3V correspondants pour l'analyse des ces tensions. Gris = GND, Orange = 1.8V ( V+ ), Rouge = 3.3V ( 3V3 ), flèches Verte = interrupteur d'activation des tensions ( V+ et 3V3 ), ronds Vert = points de vérifications, carrés Vert = leds d'activation des tensions.)*
 
 *(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard pour faire ces vérifications.)*
 
