@@ -322,6 +322,7 @@ Cela signifie que **l’écran devrait démarrer avec uniquement VDD et VCI**, �
 ![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
 
 [!WARNING]
+
 *(Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran )*
 
 ---
