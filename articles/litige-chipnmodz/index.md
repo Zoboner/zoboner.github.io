@@ -632,9 +632,16 @@ Je montre comment s'y prendre manuellement pour la forme, mais je tiens a préci
 
 - "Static I/O" :
 
+![set StaticIO ](images/set_StaticIO.png)
+
 - "Logic" :
 
+![set Logic 1 ](images/set_Logic_tool1.png)
+![set Logic 2 ](images/set_Logic_tool2.png)
+
 - "Protocol" :
+
+![set Protocol ](images/set_Protocol_tool.png)
 
 ##
 # Mise sous tension avec respect du protocole :
