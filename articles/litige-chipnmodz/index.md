@@ -187,7 +187,7 @@ Voici le résumé des messages (anonymisés pour respecter le secret des corresp
 > **Leur dernière réponse (résumée) :**  
 > *"Si vous n'êtes pas capable de retirer de simples bagues, ne vous lancez pas dans la réparation de console."*
 
-Je n'ai pas répondu a leur dernier mail, car ils sont de bien mauvaise foi et me font des éloges sur mes travaux 😂😂😂 ! Considérant que le litige n'est plus une question de blabla, il est temps de montrer a ces amateurs comment on opère sur un circuit 🤗 et ça c'est mon dada... Pas de bol 👹!
+Je n'ai pas répondu a leur dernier mail, car ils sont de bien mauvaise foi et me font des éloges sur mes compétences 😂😂😂 ! Considérant que le litige n'est plus une question de blabla, il est temps de montrer a ces amateurs comment on opère sur un circuit 🤗 et ça c'est mon dada... Pas de bol 👹!
 ---
 
 ## Réparation et preuve de l'amateurisme
@@ -321,7 +321,8 @@ Cela signifie que **l’écran devrait démarrer avec uniquement VDD et VCI**, �
 
 ![Mise en place des câbles de raccordement 2.54](images/bro.jpg) 
 
-*(⚠ Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran ⚠)*
+[!WARNING]
+*(Le câblage de ces pistes est très fin et nécessite une attention particulière, il faut testé la continuité et les éventuels court circuits avant de continuer, il en vas de la survie de l'écran )*
 
 ---
 
@@ -361,7 +362,7 @@ Une foi activé et non connecté a l'écran, il suffira de connecter les pinces 
 
 ![Câblage partie Oscillo de l'ADS](images/cablage_test_tension.png)
 
-*(⚠ ne pas oublié d'activer les interrupteurs V+ et 3.3V correspondants pour l'analyse des ces tensions. Gris = GND, Orange = 1.8V ( V+ ), Rouge = 3.3V ( 3V3 ), flèches Verte = interrupteur d'activation des tensions ( V+ et 3V3 ), ronds Vert = points de vérifications, carrés Vert = leds d'activation des tensions.)*
+*([!WARNING] ne pas oublié d'activer les interrupteurs V+ et 3.3V correspondants pour l'analyse des ces tensions. Gris = GND, Orange = 1.8V ( V+ ), Rouge = 3.3V ( 3V3 ), flèches Verte = interrupteur d'activation des tensions ( V+ et 3V3 ), ronds Vert = points de vérifications, carrés Vert = leds d'activation des tensions.)*
 
 *(Pour ma part, j'utilise un câble de teste relié a la borne + de la partie Oscillo', car il est bien plus pratique pour cette vérification, puisqu'il suffit de l'insérer dans le point de sorti en liaison sur la Breadboard pour faire ces vérifications.)*
 
@@ -379,7 +380,7 @@ Ensuite il suffit de répéter l'opération de vérification de la tension via l
 
 ![Vérif' Voltmeter 3V3](images/verif_tension_3v3.png)
 
-*( La tension en visuel, et ce coup ci, j'ai pris le screenshot avec la tensions active, pour une meilleur compréhension. Ici nous distinguons a peine l'aiguille rouge représentant la valeur maxi acquise, mais nous pouvons nous référer a la valeur 3.3094V ( sous les aiguilles ) qui est bien celle attendue, soit 3.3V )*
+*(La tension en visuel, et ce coup ci, j'ai pris le screenshot avec la tensions active, pour une meilleur compréhension. Ici nous distinguons a peine l'aiguille rouge représentant la valeur maxi acquise, mais nous pouvons nous référer a la valeur 3.3094V ( sous les aiguilles ) qui est bien celle attendue, soit 3.3V)*
 
 - Une foi les tensions vérifiées et validées, on connecte l'écran ? :
 
