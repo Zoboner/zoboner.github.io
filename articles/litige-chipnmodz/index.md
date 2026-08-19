@@ -658,9 +658,9 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
 
 ![MDP](images/sec_mdp.png)
 
-*(Il y a bien les 24 impulsions d'horloge (CLK), c'est l’essentiel. Nous savons que la voie montante (ADS → écran) fonctionne.)*
+*(Il y a bien les 24 impulsions d'horloge (CLK), 8 impulsions d’horloge pour chaque octet, c'est l’essentiel. Nous savons que la voie montante (ADS → écran) fonctionne.)*
 
-*(SPI_MOSI, rapporte bien le Mot De Passe. A ce stade MISO n'est pas raccordé donc il ne confère aucun retour d'où "h00", nous modifierons cela par la suite.)*
+*(SPI_MOSI, rapporte bien le Mot De Passe, Les bits de F0 (11110000), 5A (01011010), 5A (01011010) sur MOSI, en commençant par le bit de poids fort. A ce stade MISO n'est pas raccordé donc il ne confère aucun retour d'où "h00", nous modifierons cela par la suite.)*
 
 *(Ici le Reset n'est pas visible pour la simple et unique raison que la séquence de Reset est effectuer avant de lancé "Logic" donc il n'apparait pas !)*  
 
