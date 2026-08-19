@@ -658,6 +658,10 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
 
 ![MDP](images/sec_mdp.png)
 
+*(Il y a bien les 24 impulsions d'horloge (CLK), c'est l’essentiel. Nous savons que la voie montante (ADS → écran) fonctionne.)*
+
+*(SPI_MOSI, rapporte bien le Mot De Passe. A ce stade MISO n'est pas raccordé donc il ne confère aucun retour d'où "h00", nous modifierons cela par la suite.)*
+
 *(Ici le Reset n'est pas visible pour la simple et unique raison que la séquence de Reset est effectuer avant de lancé "Logic" donc il n'apparait pas !)*  
 
 *(si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole !)*
