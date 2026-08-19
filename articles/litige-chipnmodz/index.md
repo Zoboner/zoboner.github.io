@@ -410,7 +410,7 @@ Mais je tenais tout de même a clarifier ce point, qui vous le verrez est crucia
 
 Donc, connectons l'écran a ces bornes respective, soit VDD -> 1.8V (V+) puis VCI -> 3.3V (3V3) ( dans cette ordre ! ), avant que vous ne vous endormiez tous 🥱😴. On ce réveille les mec !... N'oublions pas de connecter le GND de ce dernier, au plan de masse de l'ADS.
 
-![Alimentation Power On](images/PowerOn.jpg)
+![Alimentation Power On](images/PowerOn.png)
 
 *(liaison pour l'alimentation.)*
 
