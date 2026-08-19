@@ -656,7 +656,7 @@ Vous venez de d'effectuer votre premier transfère de données.
 
 Il devrait vous donner ceci comme résultat dans "Logic" :
 
-![Reset + MDP](images/LogicDataRST&MDP.png)
+![MDP](images/sec_mdp.png)
 
 *( si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole ! )*
 
