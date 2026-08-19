@@ -658,7 +658,9 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
 
 ![MDP](images/sec_mdp.png)
 
-*( si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole ! )*
+*(Ici le Reset n'est pas visible pour la simple et unique raison que la séquence de Reset est effectuer avant de lancé "Logic" donc il n'apparait pas !)*  
+
+*(si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole !)*
 
 ##
 
