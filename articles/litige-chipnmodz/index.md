@@ -674,9 +674,41 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
 
 *(Ici le Reset n'est pas visible pour la simple et unique raison que la séquence de Reset est effectuer avant de lancé "Logic" donc il n'apparait pas !)*  
 
-*(si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole !)*
+*(si vous obtenez autres choses ou des lignes droites, vérifiez vôtre câblage et la continuité, si toujours rien, soit votre écran est HS soit vous n'avez pas respecté le protocole ou alors le parametrage des outils n'est pas correcte !)*
 
 ##
+
+## Okay, ceci est une méthode base, mais voyons comment faire plus propre et fonctionnel :
+
+** Utilisation du module Sparkfun :
+
+* Brasage des Pins du module :
+
+  ![LS-pins a brasés](images/LSpinsNonBrasés.JPEG)
+
+  *( Pour souder les 2 barrettes correctement il suffit de s'aider d'une mini breadBoard )*
+  
+  ![LS-pins brasés](images/LSpinsBrasés.JPEG)
+
+  *( Le module avec ces 2 barrettes soudées. )*
+
+* Une fois les barrettes misent en places il nous faut comprendre la conection :
+
+    - VCCA doit être connecté a V+ 1.8V
+    - VCCB doit être connecté a 3.3V
+    - VCCA doit être <= à VCCB ( 1.8V < 3.3V )
+    - OE doit être connecté a VCCA
+    - GND doit être connecté a la masse commune
+    - Les bornes notées "A" sont réservées a l'écran 
+    - Les bornes notées "B" sont réservées a DIOs de l'ADS
+
+Voici le circuit de liaison des tensions : 
+
+![LS-tension](images/lsTens.JPEG)
+
+
+
+    
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
