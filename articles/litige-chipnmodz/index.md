@@ -453,6 +453,8 @@ Comme tout bon électroniciens, j'ai une montagne de composants près a êtres d
 Je fabriquerais un adaptateur de niveau plus tard pour obtenir une solution plus propre et montré comment s'y prendre, je pense que cela pourrait intéresser quelques uns d'entre vous, pour ce dépanner !
 J'ai aussi commandé ceux-ci, un module adaptateur de niveaux et quelques autres éléments pour de futures projets assimilable a celui-ci et pour celui-ci ( rappelez vous de MISO qui demande a fonctionner en inversion ! ) ! Mais en attendant, nous allons faire avec la solution du pauvre, en utilisant quelques résistances 😉, c'est pas dure, c'est peu coûteux et ça dépanne max !
 
+![Les_Boites](images/Boites.JPEG)
+
 ##
 
 # la solution du pauvre : Le pont diviseur résistif :
@@ -498,9 +500,13 @@ Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme cec
 
 ##
 
-[A venir : Level Shifter, solution ultra propre.]
+## Level Shifter, solution ultra propre :
 
 *J'ai tenté de commander un CI ( IC ) de chez Texas Instrument model TXS0108EQDGSRQ1, mais il est très compliqué de le trouver par chez nous, où alors malheureusement vendu a un prix non attractif ( l'Europe c'est de la 🤬 ! ) et des frais de port hallucinant ( USA 28$ mini, EU 15€ mini pour un CI d'une valeur de 1.8€ ! Qu'il se le garde ! ), j'ai donc opté pour un module Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E), c'est dommage car j'aurais voulu vous montrer l'assemblage complet du CI... Nous, nous contenterons de cette solution tout en un 💔 !*
+
+![Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E)](images/Sparkfun.JPEG)
+
+*( Voici le module Bidirectionnel en question dont l'utilisation est expliqué plus bas dans ce pavé. )*
 
 ##
 
@@ -508,11 +514,15 @@ Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme cec
 
 *J'ai par la même occasion, commandé un lot de MOSFET 2N7000 ( THT ), il démontrera l'importance de connaitre les bases de l'éléctro' pour ce dépatouiller avec peu de moyens 😉! Bien entendu il n'interférera pas avec l'écran, ce sera simplement une démo a part !*
 
+![MOSFET](images/MOSFET.JPEG)
+
 ##
 
 [A venir : Développement sur écran oled monochrome SPI a 7 broches.]
 
 *Quitte a faire, amusons nous quelques peu 😁! Nous créerons par simple développement, un affichage standard, puis développerons un jeux en utilisant des méthodes plus complexe dans notre développement ! Vous comprendrez ainsi que ce type d'écran ( bien moins compliqué que celui de la Vita ! ), est un bon départ pour la compréhension et l'analyse protocolaire ! Puis si j'en ai le temps, nous ferons de même avec un écran plus complexe avec canaux RGB impliquant l'utilisation de séquences complexe lié a l'affichage de millions de possibilité colorimétrique. Vous verrez que c'est une autre paire de manche, mais est extrêmement formateur !*
+
+![Mono-Screen](images/MScreen.JPEG)
 
 ##
 
