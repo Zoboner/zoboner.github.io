@@ -453,7 +453,9 @@ Comme tout bon électroniciens, j'ai une montagne de composants près a êtres d
 Je fabriquerais un adaptateur de niveau plus tard pour obtenir une solution plus propre et montré comment s'y prendre, je pense que cela pourrait intéresser quelques uns d'entre vous, pour ce dépanner !
 J'ai aussi commandé ceux-ci, un module adaptateur de niveaux et quelques autres éléments pour de futures projets assimilable a celui-ci et pour celui-ci ( rappelez vous de MISO qui demande a fonctionner en inversion ! ) ! Mais en attendant, nous allons faire avec la solution du pauvre, en utilisant quelques résistances 😉, c'est pas dure, c'est peu coûteux et ça dépanne max !
 
-![Les_Boites](images/Boites.JPEG)
+![Les_Boites](images/LesBoiBoites.JPG)
+
+*(Voici une des nombreuses boites dont je parle, celle-ci est correctement triée et étiquetée !)*
 
 ##
 
@@ -504,7 +506,7 @@ Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme cec
 
 *J'ai tenté de commander un CI ( IC ) de chez Texas Instrument model TXS0108EQDGSRQ1, mais il est très compliqué de le trouver par chez nous, où alors malheureusement vendu a un prix non attractif ( l'Europe c'est de la 🤬 ! ) et des frais de port hallucinant ( USA 28$ mini, EU 15€ mini pour un CI d'une valeur de 1.8€ ! Qu'il se le garde ! ), j'ai donc opté pour un module Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E), c'est dommage car j'aurais voulu vous montrer l'assemblage complet du CI... Nous, nous contenterons de cette solution tout en un 💔 !*
 
-![Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E)](images/Sparkfun.JPEG)
+![Sparkfun Level Shifter - 8 canaux bidirectionnel (TXS0108E)](images/LSprepare.JPG)
 
 *( Voici le module Bidirectionnel en question dont l'utilisation est expliqué plus bas dans ce pavé. )*
 
@@ -514,15 +516,17 @@ Si la tension est normale, soit ~= 1.8V, alors il faut câblé le tout comme cec
 
 *J'ai par la même occasion, commandé un lot de MOSFET 2N7000 ( THT ), il démontrera l'importance de connaitre les bases de l'éléctro' pour ce dépatouiller avec peu de moyens 😉! Bien entendu il n'interférera pas avec l'écran, ce sera simplement une démo a part !*
 
-![MOSFET](images/MOSFET.JPEG)
-
 ##
 
 [A venir : Développement sur écran oled monochrome SPI a 7 broches.]
 
 *Quitte a faire, amusons nous quelques peu 😁! Nous créerons par simple développement, un affichage standard, puis développerons un jeux en utilisant des méthodes plus complexe dans notre développement ! Vous comprendrez ainsi que ce type d'écran ( bien moins compliqué que celui de la Vita ! ), est un bon départ pour la compréhension et l'analyse protocolaire ! Puis si j'en ai le temps, nous ferons de même avec un écran plus complexe avec canaux RGB impliquant l'utilisation de séquences complexe lié a l'affichage de millions de possibilité colorimétrique. Vous verrez que c'est une autre paire de manche, mais est extrêmement formateur !*
 
-![Mono-Screen](images/MScreen.JPEG)
+# (EDIT) Je suis revenue de vacances et est reçut, entre temp, la commande du module, des MOSFETs et de l'écran monochrome, je finis donc ce blog pour mater "cheap n dobz" et le compléterais a mesure concernant les MOSFETs et l'écran, ce qui nous permettra d'exploiter quelques notions utiles et par la même occasion en apprendre plus si vous êtes néophyte et bien entendu intéressé 🧐 ! (EDIT)
+
+![Mono-Screen](images/receptionMatos.JPG)
+
+*(Voilà de quoi nous réjouir quelques peu 😊!)*
 
 ##
 
@@ -668,6 +672,8 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
 
 ![MDP](images/sec_mdp.png)
 
+*(Ici, la séquence est correcte, mais son retour est inversé (5A, 5A, F0), ceci est due a un mauvais réglage dans les options de l'outil... Mais pas d'inquiétudes, car il ne s'agit ici que de démonstration dans l'utilisation des outils logiciel, nous verrons qu'avec toutes les connections nescessaire et les bons réglages, il retournera parfaitement les bits dans le bon ordre 😉.)*
+
 *(Il y a bien les 24 impulsions d'horloge (CLK), 8 impulsions d’horloge pour chaque octet, c'est l’essentiel. Nous savons que la voie montante (ADS → écran) fonctionne.)*
 
 *(SPI_MOSI, rapporte bien le Mot De Passe, Les bits de F0 (11110000), 5A (01011010), 5A (01011010) sur MOSI, en commençant par le bit de poids fort. A ce stade MISO n'est pas raccordé donc il ne confère aucun retour d'où "h00", nous modifierons cela par la suite.)*
@@ -680,19 +686,23 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
 
 ## Okay, ceci est une méthode base, mais voyons comment faire plus propre et fonctionnel :
 
-** Utilisation du module Sparkfun :
+**Utilisation du module Sparkfun :**
 
-* Brasage des Pins du module :
+*Brasage des Pins du module :*
 
-  ![LS-pins a brasés](images/LSpinsNonBrasés.JPEG)
+  ![LS-pins a brasés](images/LSunsoldering.JPG)
 
   *( Pour souder les 2 barrettes correctement il suffit de s'aider d'une mini breadBoard )*
   
-  ![LS-pins brasés](images/LSpinsBrasés.JPEG)
+  ![LS-pins brasés](images/LSviewed.JPG)
+  
+  ![LS-pins brasés](images/LSsoldering.JPG)
 
   *( Le module avec ces 2 barrettes soudées. )*
 
-* Une fois les barrettes misent en places il nous faut comprendre la conection :
+**Ne pas oublier de tester les bornes du module pour éviter tout court circuit !!!**
+
+*Une fois les barrettes misent en places il nous faut comprendre la conection :*
 
     - VCCA doit être connecté a V+ 1.8V
     - VCCB doit être connecté a 3.3V
@@ -702,13 +712,32 @@ Il devrait vous donner ceci comme résultat dans "Logic" :
     - Les bornes notées "A" sont réservées a l'écran 
     - Les bornes notées "B" sont réservées a DIOs de l'ADS
 
-Voici le circuit de liaison des tensions : 
+**Voici le circuit de liaison des tensions :** 
 
-![LS-tension](images/lsTens.JPEG)
+![LS-tension](images/LSTesteTens.JPG)
 
+*(Infos couleurs des câbles : Noir = GND, Rouge = 3V3 (VCCB), Vert = 1V8 (VCCA).)*
 
+![LS-tension](images/LSTestTenZoomed.JPG)
 
-    
+*(Un p'tit ZOOM pour les malvoyants 😎.)*
+
+Après un teste du module sur un des DIOs pour voir si tout est fonctionnel dans les deux sens et si tout est OK, alors il sera temps d'en finir avec l'écran défectueux de chez Sony 🙄...
+
+## Connectons la bestiole au circuit et testons si l'écran retourne des valeurs, ce qui attestera de sa réparation ou non !
+
+La connection finale :
+
+![LS-finale](images/DernierreCo.JPG)
+
+*(Les deux derniers câbles pour les connections utiles a ce teste ont été ajouté (MISO et INT).)*
+
+Cette foi ci, nous allons utiliser un script "JSON" très léger, afin d'automatiser l'injection des séquences faites manuellement plus haut dans nôtre experrience : 
+
+![script](images/WformsProg.JPG)
+
+*(Le script simple mais efficace, qui automatise l'injection de Data.)*
+
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
 *L'écran réparé en fonctionnement – aucune anomalie.*
