@@ -11,6 +11,7 @@ Blog technique dédié au modding, à l'analyse hardware et au développement su
 Un écran AMOLED vendu comme "neuf et original" qui s'avère être une contrefaçon dangereuse.  
 Diagnostic complet, photos, vidéos et réparation.
 
+###/articles/litige-chipnmodz/index.md
 ---
 
 *Ce blog est hébergé sur GitHub Pages.*
