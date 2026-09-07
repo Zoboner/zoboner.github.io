@@ -825,7 +825,16 @@ Le cas similaire, concernant un vendeur Anglais, épinglé pour une annonce "usi
 
 Encore une fois BONNE CHANCE et mangez des carottes ... Cela rend aimables il parait ! Un léger conseil pour les clients qui auraient des réclamations a faire par le future !
 
+## Comme promis, voici le travail effectué sur le system Vita de chez Sony, concernant le remplacement du port USB standard par de l'USB-C haute performance :
 
+![USB-C](images/IMG_1892.JPG)
+![USB-C](images/IMG_1893.JPG)
+![USB-C](images/IMG_1902.JPG)
+![USB-C](images/IMG_1908.JPG)
+![USB-C](images/IMG_1923.JPG)
+![USB-C](images/IMG_1926.JPG)
+![USB-C](images/IMG_1927.JPG)
+![USB-C](images/IMG_1928.JPG)
 
 
 **Liens utiles :**
