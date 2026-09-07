@@ -734,9 +734,37 @@ La connection finale :
 
 Cette foi ci, nous allons utiliser un script "JSON" très léger, afin d'automatiser l'injection des séquences faites manuellement plus haut dans nôtre experrience : 
 
-![script](images/WformsProg.JPG)
+![script](images/WformsProg.PNG)
 
-*(Le script simple mais efficace, qui automatise l'injection de Data.)*
+*(Le script simple mais efficace, qui automatise l'injection de Data, la sortie (OUTPUT) indique le fonctionnement de celui-ci dans sont intégralité.)*
+
+# Le principe reste le même, séquence d'amorçage -> V+ puis 3V3, RESET manuel puis ce coup-ci nous fermons l'outil pour éviter les conflits avec les outils protocol et Logic configurés au préalable, puis il suffira de faire une demande d'acquisition avec l'outil Logic et de lancer le script, pour enfin obtenir nôtre retour tant désiré 🤗.
+
+![protocolTool](images/WformsProtocolConf.PNG)
+
+*(Configuration de l'outil Protocol.)*
+
+## Et le coup de grâce pour "cheap n dobz", voici l'acquisition complète avec un joli retour qui indique que l'écran répond enfin et est donc réparé 😎 ! Who's cheaps n' Bad ?! 🤣😂🤣🤭🤭🤭
+
+![logicTool](images/WformsLogic1.PNG)
+
+![logicTool](images/WformsLogic2.PNG)
+
+![logicTool](images/WformsLogic3.PNG)
+
+![logicTool](images/WformsLogic4.PNG)
+
+![logicTool](images/WformsLogic5.PNG)
+
+![logicTool](images/WformsLogic6.PNG)
+
+![logicTool](images/WformsLogic7.PNG)
+
+![logicTool](images/WformsLogic8.PNG)
+
+![logicTool](images/WformsLogic9.PNG)
+
+![logicTool](images/WformsLogic10.PNG)
 
 
 ![Écran fonctionnel](images/ecran_allume.jpg)  
