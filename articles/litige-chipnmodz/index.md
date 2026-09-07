@@ -744,11 +744,17 @@ Cette foi ci, nous allons utiliser un script "JSON" très léger, afin d'automat
 
 *(Configuration de l'outil Protocol.)*
 
-## Et le coup de grâce pour "cheap n dobz", voici l'acquisition complète avec un joli retour qui indique que l'écran répond enfin et est donc réparé 😎 ! Who's cheaps n' Bad ?! 🤣😂🤣🤭🤭🤭
+## Et le coup de grâce pour "cheap n dobz", voici l'acquisition complète avec un joli retour qui indique que l'écran répond enfin et est donc réparé 😎 ! Il y a tout ce qu'il faut, des fréquences d'horloge aux Bits, et on dit MERCI a MISO et INT 😘 ! Who's cheaps n' Bad ?! 🤣😂🤣🤭🤭🤭
 
 ![logicTool](images/WformsLogic1.PNG)
 
+*(La séquence complète dézoomée.)*
+
 ![logicTool](images/WformsLogic2.PNG)
+
+*(Mot de passe et retour successfully 🏆 via MISO)* 
+
+# Le reste de la séquence complète :
 
 ![logicTool](images/WformsLogic3.PNG)
 
@@ -766,10 +772,6 @@ Cette foi ci, nous allons utiliser un script "JSON" très léger, afin d'automat
 
 ![logicTool](images/WformsLogic10.PNG)
 
-
-![Écran fonctionnel](images/ecran_allume.jpg)  
-*L'écran réparé en fonctionnement – aucune anomalie.*
-
 ---
 
 ## Ce que cela m'aurait coûté si je l'avais branché
@@ -785,7 +787,7 @@ J'ai évité ce désastre grâce à mon expérience et mes outils. Un novice aur
 ---
 
 ## Conclusion et avertissement
-V
+
 **Chip'n Modz vend des produits :**
 - ❌ Non conformes à la description
 - ❌ Dangereux pour le matériel
@@ -798,10 +800,38 @@ V
 - Vérifiez la présence des bagues
 - Inspectez la nappe à la loupe
 
+## Voilà ce qu'il arrive quand des vendeurs a la sauvettes ce ventent d'être des dieux de l'électro' et tentent l'impossible pour ce dédouaner de leurs incompétences magistrale ! 
+Quand on fait mumuse avec un brasier, il faut s'attendre a s'embraser !
+
+## Que le savant ingénieur de Chip n' Modz explique a la DGCCRF que ces écrans viennent des entreprises de chez Sony et qu'ils sont neuf et complet, alors que leurs fabrications a été stoppé avec l'arrivé des modèles 2000 le 10 octobre 2013 au Japon et le 13 juin 2014 en €urope 😂😂😂, Il leur indiquera le nom du fournisseur pour preuve de l'authenticité de ce joli écran défectueux 🤗.
+
+## Il expliquera aussi le fait de dire que tout le matériels qu'il vend est testé avant toutes expédition, alors que l'écran en question aurait tout bonnement détruit ma PSvita et je le prouve par le biais de cette analyse magistrale qui pourra être conforté par un expert si il le faut ! 
+
+## Il donnera aussi des explications sur l'annonce et sa non conformité dans les lois commercial de ce pays !
+"Produit neuf et original", bonne chance, alors qu'il manque les bagues et que les soudures sont réalisé a la main et non par des machines ! 
+
+## Il leur expliquera aussi l'emploi de méthode visant a mettre en cause l'acheteur et le faire culpabiliser sur une possible erreur commise durant le montage ! Qui consiste je le rappel, a simplement réinsérer le connecteur de l'écran, puis de le remonté sur sa base ! Un travail de titan 🥱 irréalisable par un novice apparement !
+Vos mails seront du pain bénis 🥰 !
+Quand on sait que je ne souhaite pas être remboursé et que le passionné que je suis tiens a vous remercier pour ce cas d'étude simple, mais très amusant !
+Ha oui pour preuve, je leurs ai transmit tout mes achats et les preuves de paiement, soit l'la PSvita (acheté peu de temps avant cette expertise, en occase sur LBC.), le module USB-C, dont vous pourrez admirer le boulot effectué, plus bas dans ce poste, par mes soins et attestant une foi de plus de mes compétences en la matière 😁 (acheté chez GILTESA en espagne, allez donc en prendre de la graine, ce gars est un bon, un vrai et il vend du matériel de qualité 💪, force a lui et son équipe !), le remplacement de la batterie, acheté chez IFIXIT qui est un très bon site de vente et obtient un blog ou les utilisateur peuvent s'échanger des astuces et méthodes en électro' (j'ai juste été y faire un tour, mais je n'en suis pas a cela. Je félicite le truc et les idées de certains 👌), le module de chez Sparkfun et le légendaire CI TXS0108 (Amazon), les MOSFETs qui prouverons leurs utilités en électro' dans peu de temps (Amazon), l'écran monochrome qui lui aussi promet des barres de rires et d'apprentissage, très prochainement, pour le 'Noob' que je suis 🤫 (Amazon), votre écran "légendaire" tellement introuvable sur le web, qu'il donne un ratio en % RNG aussi palpable que celui de tomber sur un Mew shiny sur une 3G, sans passé par un glitch de la Baie Grena (ça c'est pour le TASer's que je suis 🤯 !), acheté chez cheap n' dobz, boutique web bientôt déchu 😈 !
+Je leur ai aussi fournit quelques une de mes compétences en programmations et certains de mes travaux en rétro-ingénierie, puis la Nintendo Switch, dont j'ai fait l'acquisition juste après nos déboires, juste pour leur prouver qu'il n'était nullement question d'argent et que je me passerais de vos billets qui auraient servis a ma faire taire et donc vous laissez libre et impunis dans vos agissements 😁😁😁.
+Moi aussi je vous aime, bande de bande 😂!
+Des bisous tout de même et je vous souhaite une bonne con...
+...sultation des offres d'emplois, car pour rappel : 
+
+Les sanctions encourues pour ce délit, sont passibles de 2 ans d'emprisonnement et 37500 € d'amende ( le montant peut même atteindre jusqu'à 10% du CA annuel).
+
+Le cas similaire, concernant un vendeur Anglais, épinglé pour une annonce "using only genuine parts for all our repairs", où les autorités de régulation ont jugé que cela était trompeur.
+
+Encore une fois BONNE CHANCE !
+
+
+
+
 **Liens utiles :**
 - [Mon avis sur Trustpilot](https://www.trustpilot.com/...)
 - [SignalConso – signalement officiel](https://signal.conso.gouv.fr/)
 
 ---
 
-*Documenté et rédigé par [zoboner] – Passionné de rétro-ingénierie depuis 12 ans.*
+*Documenté et rédigé par zoboner – Passionné de rétro-ingénierie depuis plus de 10 ans.*
