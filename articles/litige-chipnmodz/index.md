@@ -836,6 +836,17 @@ Encore une fois BONNE CHANCE et mangez des carottes ... Cela rend aimables il pa
 ![USB-C](images/IMG_1927.JPG)
 ![USB-C](images/IMG_1928.JPG)
 
+## Le system en fonction :
+
+![USB-C Sys](images/1.JPG)
+![USB-C Sys](images/2.JPG)
+![USB-C Sys](images/3.JPG)
+![USB-C Sys](images/4.JPG)
+![USB-C Sys](images/5.JPG)
+![USB-C Sys](images/6.JPG)
+
+*(Sur cette dernière est affiché la date et l'heure, et on y admire toujours ma belle et éternel rayure sous le joystick droit 😊)*
+
 
 **Liens utiles :**
 - [Mon avis sur Trustpilot](https://www.trustpilot.com/...)
