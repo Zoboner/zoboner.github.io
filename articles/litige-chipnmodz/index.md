@@ -808,7 +808,8 @@ Quand on fait mumuse avec un brasier, il faut s'attendre a s'embraser !
 ## Il expliquera aussi le fait de dire que tout le matériels qu'il vend est testé avant toutes expédition, alors que l'écran en question aurait tout bonnement détruit ma PSvita et je le prouve par le biais de cette analyse magistrale qui pourra être conforté par un expert si il le faut ! 
 
 ## Il donnera aussi des explications sur l'annonce et sa non conformité dans les lois commercial de ce pays !
-"Produit neuf et original", bonne chance, alors qu'il manque les bagues et que les soudures sont réalisé a la main et non par des machines ! 
+"Produit neuf et original", bonne chance, alors qu'il manque les bagues et que les soudures sont réalisé a la main et non par des machines ( les labos de chez Sony, pfff ) ! 
+Pour leur gouverne, quand j'achète un véhicule chez le concessionnaire, il me le livre avec les roue et ne me dit pas une dinguerie du type : " il faut les démonter sur votre ancien véhicule, puis les installer sur celui que l'on vient de vous livrer monsieur ! C'est la procédure habituelle ". 🤑🤑🤑
 
 ## Il leur expliquera aussi l'emploi de méthode visant a mettre en cause l'acheteur et le faire culpabiliser sur une possible erreur commise durant le montage ! Qui consiste je le rappel, a simplement réinsérer le connecteur de l'écran, puis de le remonté sur sa base ! Un travail de titan 🥱 irréalisable par un novice apparement !
 Vos mails seront du pain bénis 🥰 !
@@ -836,6 +837,8 @@ Encore une fois BONNE CHANCE et mangez des carottes ... Cela rend aimables il pa
 ![USB-C](images/IMG_1927.JPG)
 ![USB-C](images/IMG_1928.JPG)
 
+*(Vous pourrez admirer la facilité de ce type de travaux, qui il faut bien l'admettre est nettement plus simple que de déconnecter puis reconnecter un simple connecteur d'écran 🤗... Un pic de ma part, concernant le dernier mail reçut du savant SAV de chez Mc Daubz, qui dit que si l'on ne sait pas démonter un simple écran, alors il ne faut pas toucher a cela et laissé faire les pro' (résumé a souhait, bien entendue !).)*
+
 ## Le system en fonction :
 
 ![USB-C Sys](images/1.JPG)
@@ -845,7 +848,7 @@ Encore une fois BONNE CHANCE et mangez des carottes ... Cela rend aimables il pa
 ![USB-C Sys](images/5.JPG)
 ![USB-C Sys](images/6.JPG)
 
-*(Sur cette dernière est affiché la date et l'heure, et on y admire toujours ma belle et éternel rayure sous le joystick droit 😊)*
+*(Sur cette dernière est affiché la date et l'heure, et sur la suivante on y admire toujours ma belle et éternel rayure sous le joystick droit 😊)*
 
 
 **Liens utiles :**
@@ -853,5 +856,10 @@ Encore une fois BONNE CHANCE et mangez des carottes ... Cela rend aimables il pa
 - [SignalConso – signalement officiel](https://signal.conso.gouv.fr/)
 
 ---
+
+[A venir]
+
+Utilisation de l'écran monochrome et utilisation de MOSFETs pour la création de LVL Shifter 😉.
+
 
 *Documenté et rédigé par zoboner – Passionné de rétro-ingénierie depuis plus de 10 ans.*
