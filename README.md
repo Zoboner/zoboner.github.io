@@ -9,7 +9,7 @@ Blog technique dédié au modding, à l'analyse hardware et au développement su
 
 ## Dernier article
 
-### 🔍 [Litige avec Chip'n Modz – Écran PSVita "neuf & original"](/articles/litige-chipnmodz/)
+### 🔍 [Litige avec Chip'n Modz – Écran PSVita "neuf & original"](/articles/litige-chipnmodz/index.md)
 
 Un écran AMOLED vendu comme "neuf et original" qui s'avère être une contrefaçon dangereuse.  
 Diagnostic complet, photos, vidéos et réparation.
